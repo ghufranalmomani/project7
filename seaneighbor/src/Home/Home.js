@@ -7,6 +7,7 @@ import Event from './Event';
 function Home(){
     return(
         <>
+        
         <Head/>
         <About/>
         <Packages/>

@@ -11,7 +11,7 @@ function Head(){
     <div className="overlay overlay-bg" />
     <div className="container">
       <div className="row fullscreen align-items-center justify-content-between">
-        <div className="col-lg-6 col-md-6 banner-left" >
+        <div className="col-lg-6 col-md-6 banner-left" style={{ marginTop:'130px' }}>
           <h6 className="text-white">Away to growth your small business</h6>
           <h1 className="text-white">Souk By The Sea</h1>
           <p className="text-white">
@@ -22,7 +22,7 @@ function Head(){
             Get Started
           </a>
         </div>
-        <div className="col-lg-4 col-md-6 banner-right " style={{ marginTop:'115px' }} >
+        <div className="col-lg-4 col-md-6 banner-right " style={{ marginTop:'130px' }} >
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item">
               <a

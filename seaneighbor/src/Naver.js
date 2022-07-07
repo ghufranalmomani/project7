@@ -5,27 +5,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Button from 'react-bootstrap/Button';
+
 
 
 function Naver(){
     return(
         <>
-
-
-   
-      <Navbar >
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-    
-        {/* <header id="header" >
-        <div className="header-top">
+<header id="header" >
+<div className="header-top">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 col-sm-6 col-6 header-top-left">
@@ -34,7 +22,7 @@ function Naver(){
                     <a href="#">Visit Us</a>
                   </li>
                   <li>
-                    <a href="#">Buy Tickets</a>
+                    <a href="#">Book Booth</a>
                   </li>
                 </ul>
               </div>
@@ -57,70 +45,42 @@ function Naver(){
             </div>
           </div>
         </div>
-        <div className="container main-menu">
-          <div className="row align-items-center justify-content-between d-flex">
-            <div id="logo">
-              <a href="index.html">
-                <img src="img/logo.png" alt="" title="" height={40}/>
-              </a>
-            </div>
-            <nav id="nav-menu-container">
-              <ul className="nav-menu">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="packages.html">Packages</a>
-                </li>
-                <li>
-                  <a href="hotels.html">Hotels</a>
-                </li>
-                <li>
-                  <a href="insurance.html">Insurence</a>
-                </li>
-                <li className="menu-has-children">
-                  <a href="">Blog</a>
-                  <ul>
-                    <li>
-                      <a href="blog-home.html">Blog Home</a>
-                    </li>
-                    <li>
-                      <a href="blog-single.html">Blog Single</a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="menu-has-children">
-                  <a href="">Pages</a>
-                  <ul>
-                    <li>
-                      <a href="elements.html">Elements</a>
-                    </li>
-                    <li className="menu-has-children">
-                      <a href="">Level 2 </a>
-                      <ul>
-                        <li>
-                          <a href="#">Item One</a>
-                        </li>
-                        <li>
-                          <a href="#">Item Two</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </nav>
-         
-          </div>
-        </div>
-      </header>
-  */}
+        <div className="container main-menu ">
+<Navbar  expand="lg">
+      <Container fluid >
+        <Navbar.Brand href="#"> <img
+              alt=""
+              src="/img/logo3.png"
+              width="170"
+              height="53"
+              className="d-inline-block align-top"
+            />
+            </Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Nav.Link href="#action1" className='text-white mr-3'>Home</Nav.Link>
+            <Nav.Link href="#action1" className='text-white mr-3'>Book Booth</Nav.Link>
+            <Nav.Link href="#action2" className='text-white mr-3'>Services</Nav.Link>
+           
+            <Nav.Link href="#" className='text-white mr-3'>
+             About Us
+            </Nav.Link>
+            <Nav.Link href="#action2" className='text-white'>Contact Us</Nav.Link>
+          </Nav>
+          <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
+    height: '45px',textAlign: 'center',}}>Login</Nav.Link>
+          <Nav.Link href="#action2" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
+    height: '45px',textAlign: 'center'}}>Signup</Nav.Link>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    </div>
+  </header>
       </>
     )
 }
