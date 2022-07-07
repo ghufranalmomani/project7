@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import 'font-awesome/css/font-awesome.min.css'; 
+// import 'font-awesome/css/font-awesome.min.css'; 
 
 
 
@@ -25,8 +25,8 @@ function Form() {
             const arr= data.data;
             // const array= Object.values(arr);
             // console.log(arr[0]);
-            // console.log(array);
-            // console.log(Array.isArray(arr));
+            console.log(arr);
+            console.log(Array.isArray(arr));
             setData(arr);
             // console.log(data[0]);
         })
@@ -70,7 +70,7 @@ function Form() {
                 data.map((reserve,i) =>{
                     return(
                     <ul key={i}>
-                        <li><a href=""><FontAwesomeIcon icon="fa-solid fa-chair" /></a>{reserve.from_date}</li>
+                        <li><a href=""></a>{reserve.from_date}</li>
                     </ul>)
                 })
                 }

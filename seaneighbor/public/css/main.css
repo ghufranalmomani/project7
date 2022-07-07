@@ -2483,20 +2483,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-<<<<<<< HEAD:seaneighpor/public/css/main.css
   background: url(../img/2.jpg) center;
-=======
-  background: url(../img/hero-bg.jpg) center;
->>>>>>> 741c7e8990b22a9330eab36b328dff1fb174b56b:seaneighbor/public/css/main.css
   background-size: cover;
 }
 
 .banner-area .overlay-bg {
-<<<<<<< HEAD:seaneighpor/public/css/main.css
   background: rgba(4, 9, 30, 0.5);
-=======
-  background: rgba(4, 9, 30, 0.4);
->>>>>>> 741c7e8990b22a9330eab36b328dff1fb174b56b:seaneighbor/public/css/main.css
 }
 
 @media (max-width: 767px) {
@@ -4502,7 +4494,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-text a, .footer-text i {
   color: #f8b600;
 }
-<<<<<<< HEAD:seaneighpor/public/css/main.css
 
 
 
@@ -4625,5 +4616,3 @@ body.mobile-nav-active #mobile-nav-toggle {
       display: none;
   }
 }
-=======
->>>>>>> 741c7e8990b22a9330eab36b328dff1fb174b56b:seaneighbor/public/css/main.css

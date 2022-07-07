@@ -3,14 +3,22 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import Nav from './Components/Nav';
-import Footer from './Components/Footer';
+import {$,jQuery} from 'jquery';
 import Form from './Components/form';
+import Naver from './Naver';
+import Footer from './Footer';
+import Home from './Home/Home';
 
 function App() {
 
 return(
   <>
-<Form />
+    <Naver />
+    <Home />
+    {/* <Form /> */}
+    <Footer />
+    
+
   </>
   );
 }
