@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 
 function App() {
   return (
@@ -260,8 +263,8 @@ function App() {
           <section className="tm-slideshow-section">
             <div className="tm-slideshow">
               <img src="img/tm-img-01.jpg" alt="Image" />
-              <img src="img/tm-img-02.jpg" alt="Image" />
-              <img src="img/tm-img-03.jpg" alt="Image" />
+              {/* <img src="img/tm-img-02.jpg" alt="Image" />
+              <img src="img/tm-img-03.jpg" alt="Image" /> */}
             </div>
             <div className="tm-slideshow-description tm-bg-primary">
               <h2 className="">Europe's most visited places</h2>
@@ -283,8 +286,8 @@ function App() {
           <section className="clearfix tm-slideshow-section tm-slideshow-section-reverse">
             <div className="tm-right tm-slideshow tm-slideshow-highlight">
               <img src="img/tm-img-02.jpg" alt="Image" />
-              <img src="img/tm-img-03.jpg" alt="Image" />
-              <img src="img/tm-img-01.jpg" alt="Image" />
+              {/* <img src="img/tm-img-03.jpg" alt="Image" />
+              <img src="img/tm-img-01.jpg" alt="Image" /> */}
             </div>
             <div className="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
               <h2 className="">Asia's most popular places</h2>
@@ -306,8 +309,8 @@ function App() {
           <section className="tm-slideshow-section">
             <div className="tm-slideshow">
               <img src="img/tm-img-03.jpg" alt="Image" />
-              <img src="img/tm-img-02.jpg" alt="Image" />
-              <img src="img/tm-img-01.jpg" alt="Image" />
+              {/* <img src="img/tm-img-02.jpg" alt="Image" />
+              <img src="img/tm-img-01.jpg" alt="Image" /> */}
             </div>
             <div className="tm-slideshow-description tm-bg-primary">
               <h2 className="">America's most famous places</h2>
