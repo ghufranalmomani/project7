@@ -16,7 +16,6 @@ import SimpleMap from './Components/map';
 import Signup from './Signup/Signup';
 
 function App() {
-
 return(
   <>
     <Naver />

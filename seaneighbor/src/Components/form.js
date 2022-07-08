@@ -31,7 +31,7 @@ function Form() {
             // console.log(data[0]);
         })
     },[])
-    const submithandler=()=>{axios.post('http://localhost/project7/seaneighbor/php/connect.php?date='+fromDate+'datee='+toDate+'&place='+place+'&table='+table)}
+    const submithandler=()=>{axios.post('http://localhost/project7/seaneighbor/php/connect.php?date='+fromDate+'&datee='+toDate+'&place='+place+'&table='+table)}
     // console.log(data[0]);
     return(
         <>

@@ -1,8 +1,50 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
 
 
 
 function Head(){
+  const [fromDate,setFromDate]=useState(null)
+  const [toDate,setToDate]=useState(null)
+  const [place,setPlace]=useState(null)
+  const [table,setTable]=useState(null)
+  const[data,setData]=useState([])
+  const[dis,setDis]=useState('')
+  const[lig,setLig]=useState('')
+
+
+  const fromDateHandel=(e)=>{setFromDate(e.target.value)}
+  const toDateHandel=(e)=>{setToDate(e.target.value)}
+  const placehandel=(e)=>{setPlace(e.target.value)}
+  const tablehandel=(e)=>{setTable(e.target.value)}
+
+  useEffect(()=>{
+      axios.get('http://localhost/project7/seaneighbor/php/connect.php')
+      .then((data)=>{
+          // const array = JSON.parse(data.data);
+          // const array = toString(data);
+          const arr= data.data;
+          // const array= Object.values(arr);
+          // console.log(arr[0]);
+          console.log(arr);
+          console.log(Array.isArray(arr));
+          setData(arr);
+          console.log(fromDate,place,table);
+          arr.map(reserve =>{
+            if (reserve.from_date === fromDate && reserve.place === place && reserve.tablee === table) {
+              setDis('disabled');
+              setLig('bg-light');
+              
+            }
+            else{
+              setDis('');
+              setLig('');
+            }
+          })
+          // console.log(data[0]);
+      })
+  },[])
+  const submithandler=()=>{axios.post('http://localhost/project7/seaneighbor/php/connect.php?date='+fromDate+'datee='+toDate+'&place='+place+'&table='+table)}
     return(
         <>
          {/* start footer Area */}
@@ -72,28 +114,32 @@ function Head(){
               aria-labelledby="flight-tab"
             >
               <form className="form-wrap">
-                <div class="form-floating">
-                  <input type="date" class="form-control border-0 bg-light" id="from" name="from" />
-                  <label for="from">from</label>
+                <div className="form-floating">
+                  <input type="date" className="form-control border-0 bg-light" id="from" name="from" onChange={fromDateHandel}/>
+                  <label for="from">Date</label>
                 </div>
-                <div class="form-floating">
-                  <input type="date" class="form-control border-0 bg-light" id="to" name="to" />
-                  <label for="to">to</label>
-                </div>
-                <div class="form-floating">
-                  <input type="text" class="form-control border-0 bg-light" placeholder='your name' id="name" name="name" />
+                {/* <div className="form-floating">
+                  <input type="text" className="form-control border-0 bg-light" placeholder='your name' id="name" name="name" />
                   <label for="name">Name</label>
                 </div>
-                <div class="form-floating">
-                  <input type="text" class="form-control border-0 bg-light" placeholder='your phone' id="phone" name="phone" />
+                <div className="form-floating">
+                  <input type="text" className="form-control border-0 bg-light" placeholder='your phone' id="phone" name="phone" />
                   <label for="phone">phone</label>
                 </div>
-                <div class="form-floating">
-                  <input type="text" class="form-control border-0 bg-light" placeholder='your email' id="email" name="email" />
+                <div className="form-floating">
+                  <input type="text" className="form-control border-0 bg-light" placeholder='your email' id="email" name="email" />
                   <label for="email">email</label>
+                </div> */}
+                
+                <div className="form-floating">
+                  <select className="form-control form-select border-0 bg-light"  id="table" name="table" onChange={placehandel}>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
                 </div>
-                <div class="form-floating">
-                  <select class="form-control border-0 bg-light" placeholder='table' id="table" name="table" >
+                <div className="form-floating">
+                  <select className="form-control form-select border-0 bg-light"  id="table" name="table" onChange={tablehandel}>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -105,9 +151,9 @@ function Head(){
                     <option value="9">9</option>
                   </select>
                 </div>
-                <a href="#" className="primary-btn text-uppercase">
+                <button type='submit' onClick={submithandler} className={`primary-btn text-uppercase ${lig}`}>
                 Book Your Both
-                </a>
+                </button>
               </form>
             </div>
             <div
