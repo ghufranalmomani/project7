@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap';
 import Nav from './Components/Nav';
 import {$,jQuery} from 'jquery';
 import Form from './Components/form';
+import Services from './Components/sevices';
 import Naver from './Naver';
 import Footer from './Footer';
 import Home from './Home/Home';
@@ -24,6 +25,7 @@ return(
     <Route path={'/'} element={<Home />}>Landing Page</Route>
     <Route path={'/contact'} element={<Contact />}>Contacy us</Route>
     <Route path={'/map'} element={<SimpleMap />}>map</Route>
+    <Route path={'/services'} element={<Services />}>map</Route>
     </Routes></BrowserRouter>
     <Footer />
 

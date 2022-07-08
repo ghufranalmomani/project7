@@ -1,6 +1,7 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import SimpleMap from './Components/map';
+import RatingStars from './Components/RatingStars'
 
 
 function Contact(){
@@ -108,6 +109,7 @@ function Contact(){
                 />
               </div>
               <div className="col-lg-12">
+              <RatingStars />
                 <div className="alert-msg" style={{ textAlign: "left" }} />
                 <button
                   className="genric-btn primary"

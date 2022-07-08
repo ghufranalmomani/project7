@@ -65,7 +65,7 @@ function Naver(){
           >
             <Nav.Link href="/" className='text-white mr-3'>Home</Nav.Link>
             <Nav.Link href="#action1" className='text-white mr-3'>Book Booth</Nav.Link>
-            <Nav.Link href="#action2" className='text-white mr-3'>Services</Nav.Link>
+            <Nav.Link href="/services" className='text-white mr-3'>Services</Nav.Link>
            
             <Nav.Link href="/about" className='text-white mr-3'>
              About Us

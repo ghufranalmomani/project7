@@ -71,229 +71,69 @@ function About(){
     </div>
   </section>
   {/* End about-info Area */}
-  {/* Start price Area */}
-  <section className="price-area section-gap">
+
+  {/* Start testimonial Area */}
+  <section className="testimonial-area section-gap">
     <div className="container">
       <div className="row d-flex justify-content-center">
         <div className="menu-content pb-70 col-lg-8">
           <div className="title text-center">
-            <h1 className="mb-10">We Provide Affordable Prices</h1>
+            <h1 className="mb-10">Testimonial from our Clients</h1>
             <p>
-              Well educated, intellectual people, especially scientists at all
-              times demonstrate considerably.
+              The French Revolution constituted for the conscience of the
+              dominant aristocratic class a fall from{" "}
             </p>
           </div>
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4">
-          <div className="single-price">
-            <h4>Cheap Packages</h4>
-            <ul className="price-list">
-              <li className="d-flex justify-content-between align-items-center">
-                <span>New York</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Maldives</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Sri Lanka</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Nepal</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Thiland</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Singapore</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-            </ul>
+        <div className="active-testimonial">
+          <div className="single-testimonial item d-flex flex-row">
+            <div className="thumb">
+              <img className="img-fluid" src="img/elements/user2.png" alt="" />
+            </div>
+            <div className="desc">
+              <p>
+                A purpose is the eternal condition for success. Every former
+                smoker can tell you just how hard it is to stop smoking
+                cigarettes. However.
+              </p>
+              <h4>Carolyn Craig</h4>
+              <div className="star">
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star" />
+                <span className="fa fa-star" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="single-price">
-            <h4>Luxury Packages</h4>
-            <ul className="price-list">
-              <li className="d-flex justify-content-between align-items-center">
-                <span>New York</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Maldives</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Sri Lanka</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Nepal</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Thiland</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Singapore</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-lg-4">
-          <div className="single-price">
-            <h4>Camping Packages</h4>
-            <ul className="price-list">
-              <li className="d-flex justify-content-between align-items-center">
-                <span>New York</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Maldives</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Sri Lanka</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Nepal</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Thiland</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-              <li className="d-flex justify-content-between align-items-center">
-                <span>Singapore</span>
-                <a href="#" className="price-btn">
-                  $1500
-                </a>
-              </li>
-            </ul>
+          <div className="single-testimonial item d-flex flex-row">
+            <div className="thumb">
+              <img className="img-fluid" src="img/elements/user1.png" alt="" />
+            </div>
+            <div className="desc">
+              <p>
+                Do you want to be even more successful? Learn to love learning
+                and growth. The more effort you put into improving your skills,
+                the bigger the payoff you.
+              </p>
+              <h4>Harriet Maxwell</h4>
+              <div className="star">
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star checked" />
+                <span className="fa fa-star" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  {/* End price Area */}
-  {/* Start other-issue Area */}
-  <section className="other-issue-area section-gap">
-    <div className="container">
-      <div className="row d-flex justify-content-center">
-        <div className="menu-content pb-70 col-lg-9">
-          <div className="title text-center">
-            <h1 className="mb-10">Other issues we can help you with</h1>
-            <p>
-              We all live in an age that belongs to the young at heart. Life
-              that is.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-3 col-md-6">
-          <div className="single-other-issue">
-            <div className="thumb">
-              <img className="img-fluid" src="https://cdn.discordapp.com/attachments/962769580818858015/994507750291816468/13.jpg" alt="" />
-            </div>
-            <a href="#">
-              <h4>Rent a Car</h4>
-            </a>
-            <p>
-              The preservation of human life is the ultimate value, a pillar of
-              ethics and the foundation.
-            </p>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="single-other-issue">
-            <div className="thumb">
-              <img className="img-fluid" src="https://cdn.discordapp.com/attachments/962769580818858015/994507749826236476/11.jpg" alt="" />
-            </div>
-            <a href="#">
-              <h4>Cruise Booking</h4>
-            </a>
-            <p>
-              I was always somebody who felt quite sorry for myself, what I had
-              not got compared.
-            </p>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="single-other-issue">
-            <div className="thumb">
-              <img className="img-fluid" src="https://cdn.discordapp.com/attachments/962769580818858015/994507750535073792/14.jpg" alt="" />
-            </div>
-            <a href="#">
-              <h4>To Do List</h4>
-            </a>
-            <p>
-              The following article covers a topic that has recently moved to
-              center stage–at least it seems.
-            </p>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="single-other-issue">
-            <div className="thumb">
-              <img className="img-fluid" src="https://cdn.discordapp.com/attachments/962769580818858015/994507750056919111/12.jpg" alt="" />
-            </div>
-            <a href="#">
-              <h4>Food Features</h4>
-            </a>
-            <p>
-              There are many kinds of narratives and organizing principles.
-              Science is driven by evidence.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  {/* End other-issue Area */}
+  {/* End testimonial Area */}
+  {/* Start our team area */}
   <section id="team">
   <div className="container my-3 py-5 text-center">
     <div className="row mb-5">

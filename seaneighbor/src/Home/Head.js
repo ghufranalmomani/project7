@@ -34,10 +34,10 @@ function Head(){
                 aria-controls="flight"
                 aria-selected="true"
               >
-               days
+               reserve now !!
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a
                 className="nav-link"
                 id="hotel-tab"
@@ -62,7 +62,7 @@ function Head(){
               >
                 Months
               </a>
-            </li>
+            </li> */}
           </ul>
           <div className="tab-content" id="myTabContent">
             <div
@@ -72,58 +72,39 @@ function Head(){
               aria-labelledby="flight-tab"
             >
               <form className="form-wrap">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  placeholder="From "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'From '"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  name="to"
-                  placeholder="To "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'To '"
-                />
-                <input
-                  type="text"
-                  className="form-control date-picker"
-                  name="start"
-                  placeholder="name "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'name '"
-                />
-                <input
-                  type="text"
-                  className="form-control date-picker"
-                  name="return"
-                  placeholder="phone "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'phone '"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={20}
-                  className="form-control"
-                  name="adults"
-                  placeholder="email "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'email '"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={20}
-                  className="form-control"
-                  name="child"
-                  placeholder="type of business "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'type of business '"
-                />
+                <div class="form-floating">
+                  <input type="date" class="form-control border-0 bg-light" id="from" name="from" />
+                  <label for="from">from</label>
+                </div>
+                <div class="form-floating">
+                  <input type="date" class="form-control border-0 bg-light" id="to" name="to" />
+                  <label for="to">to</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control border-0 bg-light" placeholder='your name' id="name" name="name" />
+                  <label for="name">Name</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control border-0 bg-light" placeholder='your phone' id="phone" name="phone" />
+                  <label for="phone">phone</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control border-0 bg-light" placeholder='your email' id="email" name="email" />
+                  <label for="email">email</label>
+                </div>
+                <div class="form-floating">
+                  <select class="form-control border-0 bg-light" placeholder='table' id="table" name="table" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
                 <a href="#" className="primary-btn text-uppercase">
                 Book Your Both
                 </a>
