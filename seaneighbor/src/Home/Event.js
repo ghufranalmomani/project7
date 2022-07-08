@@ -5,7 +5,7 @@ function Event(){
     return(
         <>
   {/* Event Start */}
-  <div className="event">
+  <div className="event" id='event'>
     <div className="container">
     <div className="menu-content pb-40 ">
           <div className="title text-center">

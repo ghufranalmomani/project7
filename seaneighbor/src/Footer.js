@@ -3,23 +3,44 @@ import React from 'react';
 
 
 function Footer(){
+  //Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
     return(
         <>
          {/* start footer Area */}
   <footer className="footer-area section-gap">
+  
     <div className="container">
       <div className="row">
-        <div className="col-lg-3  col-md-6 col-sm-6">
-          <div className="single-footer-widget">
-            <h6>About Agency</h6>
-            <p>
-              The world has become so fast paced that people don’t want to stand
-              by reading a page of information, they would much rather look at a
-              presentation and understand the message. It has come to a point
-            </p>
+        <div className="col-lg-2  col-md-6 col-sm-6">
+          <div className="single-footer-widget mt-5">
+          <img
+              alt=""
+              src="/img/logo3.png"
+              width="180"
+              height="70"
+              className="d-inline-block align-top"
+            />
           </div>
         </div>
-        <div className="col-lg-3 col-md-6 col-sm-6">
+        <div className="col-lg-4 col-md-6 col-sm-6">
           <div className="single-footer-widget">
             <h6>Navigation Links</h6>
             <div className="row">
@@ -35,12 +56,12 @@ function Footer(){
                     <a href="#">Services</a>
                   </li>
                   <li>
-                    <a href="#">Portfolio</a>
+                    <a href="#event">event</a>
                   </li>
                 </ul>
               </div>
-              <div className="col">
-                <ul>
+              <div className="col" >
+                <ul style={{padding:'0px'}}>
                   <li>
                     <a href="#">Team</a>
                   </li>
@@ -60,34 +81,10 @@ function Footer(){
         </div>
         <div className="col-lg-3  col-md-6 col-sm-6">
           <div className="single-footer-widget">
-            <h6>Newsletter</h6>
+            <h6>ABOUT US</h6>
             <p>
-              For business professionals caught between high OEM price and
-              mediocre print and graphic output.
+            If you are looking space to grow your small business, you may be very confused about the place and price. We provide that at nominal prices..
             </p>
-            <div id="mc_embed_signup">
-              <form
-                target="_blank"
-                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01"
-                method="get"
-                className="subscription relative"
-              >
-                <div className="input-group d-flex flex-row">
-                  <input
-                    name="EMAIL"
-                    placeholder="Email Address"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Email Address '"
-                    required=""
-                    type="email"
-                  />
-                  <button className="btn bb-btn">
-                    <span className="lnr lnr-location" />
-                  </button>
-                </div>
-                <div className="mt-10 info" />
-              </form>
-            </div>
           </div>
         </div>
         <div className="col-lg-3  col-md-6 col-sm-6">
@@ -95,28 +92,28 @@ function Footer(){
             <h6 className="mb-20">InstaFeed</h6>
             <ul className="instafeed d-flex flex-wrap">
               <li>
-                <img src="img/i1.jpg" alt="" />
+                <img src="img/4.jpg" alt="" height={60} width={60} />
               </li>
               <li>
-                <img src="img/i2.jpg" alt="" />
+                <img src="img/34.jpg" alt="" height={60} width={60}/>
               </li>
               <li>
-                <img src="img/i3.jpg" alt="" />
+                <img src="img/20.jpg" alt="" height={60} width={60}/>
               </li>
               <li>
-                <img src="img/i4.jpg" alt="" />
+                <img src="img/29.jpg" alt="" height={60} width={60}/>
               </li>
               <li>
-                <img src="img/i5.jpg" alt="" />
+                <img src="img/15.jpg" alt="" height={60} width={60}/>
               </li>
               <li>
-                <img src="img/i6.jpg" alt="" />
+                <img src="img/7.jpg" alt="" height={60} width={60} />
               </li>
               <li>
-                <img src="img/i7.jpg" alt="" />
+                <img src="img/21.jpg" alt="" height={60} width={60} />
               </li>
               <li>
-                <img src="img/i8.jpg" alt="" />
+                <img src="img/35.jpg" alt="" height={60} width={60}/>
               </li>
             </ul>
           </div>
@@ -149,6 +146,7 @@ function Footer(){
       </div>
     </div>
   </footer>
+  <button  id="myBtn" title="Go to top" onClick={topFunction}><i class="fa-solid fa-circle-arrow-up"></i></button>
       </>
     )
 }
