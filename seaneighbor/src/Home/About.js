@@ -13,7 +13,6 @@ function About(){
         <div className="col-lg-6 col-md-12 home-about-right">
           <h1>
             What we Provide <br />
-            ABOUT US <br />
         
           </h1>
           <p>

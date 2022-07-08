@@ -1,98 +1,24 @@
 import React from 'react';
+import GoogleMapReact from 'google-map-react';
+import SimpleMap from './Components/map';
+
 
 function Contact(){
+
     return(
 
 <>
-  {/* Mobile Specific Meta */}
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  {/* Favicon*/}
-  <link rel="shortcut icon" href="img/fav.png" />
-  {/* Author Meta */}
-  <meta name="author" content="colorlib" />
-  {/* Meta Description */}
-  <meta name="description" content="" />
-  {/* Meta Keyword */}
-  <meta name="keywords" content="" />
-  {/* meta character set */}
-  <meta charSet="UTF-8" />
-  {/* Site Title */}
-  <title>Travel</title>
-  <link
-    href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
-    rel="stylesheet"
-  />
-  {/*
-			CSS
-			============================================= */}
-  <link rel="stylesheet" href="css/linearicons.css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-  <link rel="stylesheet" href="css/jquery-ui.css" />
-  <link rel="stylesheet" href="css/nice-select.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/owl.carousel.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <header id="header">
-    <div className="header-top">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-6 col-sm-6 col-6 header-top-left">
-            <ul>
-              <li>
-                <a href="#">Visit Us</a>
-              </li>
-              <li>
-                <a href="#">Buy Tickets</a>
-              </li>
-            </ul>
-          </div>
-          <div className="col-lg-6 col-sm-6 col-6 header-top-right">
-            <div className="header-social">
-              <a href="#">
-                <i className="fa fa-facebook" />
-              </a>
-              <a href="#">
-                <i className="fa fa-twitter" />
-              </a>
-              <a href="#">
-                <i className="fa fa-dribbble" />
-              </a>
-              <a href="#">
-                <i className="fa fa-behance" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="container main-menu">
-      <div className="row align-items-center justify-content-between d-flex">
-        <div id="logo">
-          <a href="index.html">
-            <img src="img/logo.png" alt="" title="" />
-          </a>
-        </div>
-        
-      </div>
-    </div>
-  </header>
-  {/* #header */}
   {/* start banner Area */}
-  <section className="relative about-banner">
+  <section className="about-banner relative">
     <div className="overlay overlay-bg" />
     <div className="container">
       <div className="row d-flex align-items-center justify-content-center">
         <div className="about-content col-lg-12">
           <h1 className="text-white">Contact Us</h1>
           <p className="text-white link-nav">
-            <a href="index.html">Home </a>{" "}
+            <a href="/">Home </a>{" "}
             <span className="lnr lnr-arrow-right" />{" "}
-            <a href="contact.html"> Contact Us</a>
+            <a href="/contact"> Contact Us</a>
           </p>
         </div>
       </div>
@@ -103,11 +29,6 @@ function Contact(){
   <section className="contact-page-area section-gap">
     <div className="container">
       <div className="row">
-        <div
-          className="map-wrap"
-          style={{ width: "100%", height: 445 }}
-          id="map"
-        />
         <div className="col-lg-4 d-flex flex-column address-wrap">
           <div className="single-contact-address d-flex flex-row">
             <div className="icon">
@@ -199,6 +120,9 @@ function Contact(){
           </form>
         </div>
       </div>
+      <div style={{ height: '100vh', width: '100%' }}>
+      {/* <SimpleMap /> */}
+    </div>
     </div>
   </section>
   {/* End contact-page Area */}

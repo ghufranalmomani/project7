@@ -63,14 +63,14 @@ function Naver(){
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" className='text-white mr-3'>Home</Nav.Link>
+            <Nav.Link href="/" className='text-white mr-3'>Home</Nav.Link>
             <Nav.Link href="#action1" className='text-white mr-3'>Book Booth</Nav.Link>
             <Nav.Link href="#action2" className='text-white mr-3'>Services</Nav.Link>
            
-            <Nav.Link href="#" className='text-white mr-3'>
+            <Nav.Link href="/about" className='text-white mr-3'>
              About Us
             </Nav.Link>
-            <Nav.Link href="#action2" className='text-white'>Contact Us</Nav.Link>
+            <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>
           </Nav>
           <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
     height: '45px',textAlign: 'center',}}>Login</Nav.Link>

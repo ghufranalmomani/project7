@@ -8,15 +8,25 @@ import Form from './Components/form';
 import Naver from './Naver';
 import Footer from './Footer';
 import Home from './Home/Home';
+import About from './About';
+import Contact from './Contact';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SimpleMap from './Components/map';
 
 function App() {
 
 return(
   <>
     <Naver />
-    <Home />
     {/* <Form /> */}
+    <BrowserRouter><Routes>
+    <Route path={'/about'} element={<About />}>About us</Route>
+    <Route path={'/'} element={<Home />}>Landing Page</Route>
+    <Route path={'/contact'} element={<Contact />}>Contacy us</Route>
+    <Route path={'/map'} element={<SimpleMap />}>map</Route>
+    </Routes></BrowserRouter>
     <Footer />
+
     
 
   </>

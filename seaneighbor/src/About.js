@@ -40,9 +40,9 @@ function About(){
         <div className="about-content col-lg-12">
           <h1 className="text-white">About Us</h1>
           <p className="text-white link-nav">
-            <a href="index.html">Home </a>{" "}
+            <a href="/">Home </a>{" "}
             <span className="lnr lnr-arrow-right" />{" "}
-            <a href="about.html"> About Us</a>
+            <a href="/about"> About Us</a>
           </p>
         </div>
       </div>
