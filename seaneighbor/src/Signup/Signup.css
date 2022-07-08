@@ -1,0 +1,29 @@
+body{
+  background-color: azure;
+}
+.form{
+  margin-right: -375%;
+  display: table-caption;
+  text-align: center;
+  margin-left: 298%;
+}
+
+.ss{
+  margin-top: 236px;
+  box-shadow: 8px 10px 25px rgb(255, 183, 0);
+  background-image: url('https://www.aljazeera.net/wp-content/uploads/2016/06/1af86ff1-a8c7-47e2-9c5d-4ca63523ab1d.jpeg?resize=686%2C513');
+border-radius: 30px;
+  
+}
+
+label{
+  color: aliceblue;
+
+}
+
+
+
+
+
+
+

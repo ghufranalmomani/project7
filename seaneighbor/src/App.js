@@ -13,6 +13,7 @@ import About from './About';
 import Contact from './Contact';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SimpleMap from './Components/map';
+import Signup from './Signup/Signup';
 
 function App() {
 
@@ -26,6 +27,7 @@ return(
     <Route path={'/contact'} element={<Contact />}>Contacy us</Route>
     <Route path={'/map'} element={<SimpleMap />}>map</Route>
     <Route path={'/services'} element={<Services />}>map</Route>
+    <Route path={'/Signup'} element={<Signup/>}>Signup</Route>
     </Routes></BrowserRouter>
     <Footer />
 
