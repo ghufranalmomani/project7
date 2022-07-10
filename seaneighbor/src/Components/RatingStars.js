@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../style.css'
 import Star from './Star';
 
-const RatingStars = () => {
+const RatingStars = ({ setRate }) => {
     const [gradeIndex, setGradeIndex] = useState();
     const GRADES = ['Poor', 'Fair', 'Good', 'Very good', 'Excellent'];
     const activeStar = {
@@ -11,6 +11,7 @@ const RatingStars = () => {
 
     const changeGradeIndex = ( index ) => {
         setGradeIndex(index);
+        setRate(index);
     }
 
     return (
@@ -18,7 +19,6 @@ const RatingStars = () => {
             {/* You didn\'t review yet removed */}
             {/* <p className="result">{ GRADES[gradeIndex] ? GRADES[gradeIndex] : ''}</p> */}
             <div className="stars">
-            <form>
                 {
                     GRADES.map((grade, index) => (
                         <Star 
@@ -29,8 +29,6 @@ const RatingStars = () => {
                         />
                     ))
                 }
-                <button type='submit' >Submit</button>
-                </form>
             </div>
         </div>
     );

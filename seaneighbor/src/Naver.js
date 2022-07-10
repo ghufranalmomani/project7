@@ -75,7 +75,7 @@ function Naver(){
           </Nav>
           <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
     height: '45px',textAlign: 'center',}}>Login</Nav.Link>
-          <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
+          <Nav.Link href="/signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
     height: '45px',textAlign: 'center'}}>Signup</Nav.Link>
         </Navbar.Collapse>
       </Container>

@@ -26,7 +26,7 @@ return(
     <Route path={'/contact'} element={<Contact />}>Contacy us</Route>
     <Route path={'/map'} element={<SimpleMap />}>map</Route>
     <Route path={'/services'} element={<Services />}>map</Route>
-    <Route path={'/Signup'} element={<Signup/>}>Signup</Route>
+    <Route path={'/signup'} element={<Signup/>}>Signup</Route>
     </Routes></BrowserRouter>
     <Footer />
 
