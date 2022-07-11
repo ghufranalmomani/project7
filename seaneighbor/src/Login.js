@@ -46,8 +46,8 @@ function Login(){
             setId(el.id)
             
             sessionStorage.setItem("user_id", id);
-                            let ide= sessionStorage.getItem("user_id");
-                            console.log("heh"+ide);
+            let ide= sessionStorage.getItem("user_id"); //// raghad here where i store data
+            // console.log("heh"+ide);
             // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
             // let id_user= el.id;
           

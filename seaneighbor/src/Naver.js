@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button';
 
 
 function Naver(test){
-  let id = sessionStorage.getItem("user_id");
+  let id = sessionStorage.getItem("user_id"); //// raghad here where i call data
 
   let state = false ;
 
@@ -25,7 +25,7 @@ function Naver(test){
       const logout =(event)=>{
         event.preventDefault();
 
-        sessionStorage.setItem("user_id" , 0);
+        sessionStorage.setItem("user_id" , 0);   //// raghad here where i call data
         // console.log("heh"+id+is_logged);
         set_logged(false);
     
