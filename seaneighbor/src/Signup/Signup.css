@@ -1,6 +1,4 @@
-body{
-  background-color: azure;
-}
+
 .form{
   margin-right: -375%;
   display: table-caption;
@@ -16,10 +14,7 @@ border-radius: 30px;
   
 }
 
-label{
-  color: aliceblue;
 
-}
 
 
 
