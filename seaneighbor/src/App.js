@@ -18,12 +18,14 @@ import Reg from './Reg';
 import Login from './Login'
 
 function App() {
+  let id =3;
 return(
   <>
+  
     <Naver />
     {/* <Form /> */}
     <BrowserRouter><Routes>
-    <Route path={'/about'} element={<About />}>About us</Route>
+    <Route path={'/about'} element={<About />} >About us</Route>
     <Route path={'/form'} element={<Forme />}>About us</Route>
     <Route path={'/'} element={<Home />}>Landing Page</Route>
     <Route path={'/contact'} element={<Contact />}>Contacy us</Route>

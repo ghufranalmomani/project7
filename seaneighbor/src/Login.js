@@ -1,12 +1,12 @@
 import React, { Component, useState, useEffect } from "react";
 import axios from 'axios';
-// import {useLocalStorage} from "react-use-storage";
+
+import Naver from './Naver';
 
 
 
 function Login(){
-// const [user_id, setUserId, removeUserId] = useLocalStorage("user_id", "");
-// const [login, setLogin, removeLogin] = useLocalStorage("login", false);
+
     const [APIData, setAPIData] = useState([]);
     useEffect(() => {
       axios.get(`http://localhost/project7/seaneighbor/php/readuser.php`)
@@ -18,6 +18,7 @@ function Login(){
 
   const [pass, setpass] = useState('');
   const [email, setEmail] = useState('');
+  const [id, setId] = useState('');
 
   const passHandel = (e)=>{setpass(e.target.value)}
   const emailHandel = (e)=>{setEmail(e.target.value)}
@@ -25,6 +26,12 @@ function Login(){
 
   const handelLog=(event)=>{
     event.preventDefault();
+
+    // const newe =()=>{
+
+      
+    // }
+
     // console.log(pass,email);
     // APIData.map(user => console.log(user.email))
     APIData.map((el)=>{
@@ -35,6 +42,12 @@ function Login(){
 //    console.log(e, el.email);
 //    console.log('"'+p+'"');
         if(pass ==el.pass&& email == el.email){
+            // console.log(el.id);
+            setId(el.id)
+            
+            sessionStorage.setItem("user_id", id);
+                            let ide= sessionStorage.getItem("user_id");
+                            console.log("heh"+ide);
             // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
             // let id_user= el.id;
           
@@ -44,10 +57,10 @@ function Login(){
             // setUserId(el.id)
             // setLogin(true)
             // console.log(id_user);
-            window.location.href = "/";
+            // window.location.href = "/";
            
            }else{
-               console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
+            //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
                document.getElementById('e1').style.display="block";
                document.getElementById('e2').style.display="block";
             }
@@ -55,8 +68,12 @@ function Login(){
    
   }
 
+//   console.log(id,"before render" );
 
     return(
+        
+        <>
+       {/* <Naver style={{display:'none'}} test={id}/> */}
         <div className="register-photo " style={{marginTop: '110px'}}>
           <div className="form-container " > 
           <div className="image-holder" />
@@ -104,7 +121,7 @@ function Login(){
             </div>
             </div>
             
-           
+            </>
     )
 }
 

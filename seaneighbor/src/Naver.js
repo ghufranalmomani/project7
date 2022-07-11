@@ -10,8 +10,28 @@ import Button from 'react-bootstrap/Button';
 
 
 
-function Naver(){
-  const [login, setLogin]= useState(false);
+function Naver(test){
+  let id = sessionStorage.getItem("user_id");
+
+  let state = false ;
+
+  if( id !== 0)
+  {
+    state = true;
+  }
+
+      const [login,set_logged] = useState(state);
+
+      const logout =(event)=>{
+        event.preventDefault();
+
+        sessionStorage.setItem("user_id" , 0);
+        // console.log("heh"+id+is_logged);
+        set_logged(false);
+    
+       }  
+  
+ 
     return(
         <>
 <header id="header" >
@@ -79,7 +99,7 @@ function Naver(){
     height: '45px',textAlign: 'center', display: login ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
     height: '45px',textAlign: 'center', display: login ? 'none': 'block'}}>Signup</Nav.Link>
-     <Nav.Link href="/services" className='text-white mr-3' style={{display: login ? 'block': 'none'}}>Logout</Nav.Link>
+     <Nav.Link href="/services" className='text-white mr-3' style={{display: login ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
 
         </Navbar.Collapse>
       </Container>
