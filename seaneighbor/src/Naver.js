@@ -75,10 +75,12 @@ function Naver(){
             <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>
           </Nav>
           <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
+
     height: '45px',textAlign: 'center', display: login ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
     height: '45px',textAlign: 'center', display: login ? 'none': 'block'}}>Signup</Nav.Link>
      <Nav.Link href="/services" className='text-white mr-3' style={{display: login ? 'block': 'none'}}>Logout</Nav.Link>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

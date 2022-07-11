@@ -1,9 +1,38 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import RatingStars from './RatingStars';
 
 
 
 function Services() {
+  const [name,setName]=useState('');
+  const [email,setEmail]=useState('');
+  const [rate,setRate]=useState(null);
+  const [message,setMessage]=useState('');
+
+  const nameHandle=(e) => {
+    setName(e.target.value)
+  }
+  const emailHandle=(e) => {
+    setEmail(e.target.value)
+  }
+  const messageHandle=(e) => {
+    setMessage(e.target.value)
+  }
+  const rateHandle=(e) => {
+    // console.log(e.target.value);
+    // setRate(e.target.value)
+  }
+  // useEffect(()=>{
+    
+  // },[])
+
+  const submitHandler=(event)=>{
+    event.preventDefault();
+    axios.post('http://localhost/project7/seaneighbor/php/comments.php?name='+name+'&email='+email+'&message='+message+'&rate='+rate);
+    alert('Your comment submitted succefully');
+    window.location= 'http://localhost:3000/services';
+  }
     return (
         <>
         {/* start banner Area */}
@@ -246,8 +275,63 @@ function Services() {
   </section>
   {/* End other-issue Area */}
   {/* End banner Area */}
-        <div className='py-5 my-5' style={{ height: '50vh', width: '50%' }}>
-        <RatingStars/>
+        <div className='container' style={{ height: '50vh', width: '50%' }}>
+        <form
+            className="form-area contact-form text-right"
+            id="myForm"
+            action="mail.php"
+            method="post"
+          >
+            <div className="row">
+              <div className="col-lg-6 form-group">
+                <input
+                  name="name"
+                  placeholder="Enter your name"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Enter your name'"
+                  className="common-input mb-20 form-control"
+                  required=""
+                  type="text"
+                  onChange={nameHandle}
+                />
+                <input
+                  name="email"
+                  placeholder="Enter email address"
+                  pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Enter email address'"
+                  className="common-input mb-20 form-control"
+                  required=""
+                  type="email"
+                  onChange={emailHandle}
+                />
+              </div>
+              <div className="col-lg-6 form-group">
+                <textarea
+                  className="common-textarea form-control"
+                  name="message"
+                  placeholder="Enter Messege"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Enter Messege'"
+                  required=""
+                  defaultValue={""}
+                  onChange={messageHandle}
+                />
+              </div>
+              <div className="col-lg-12" style={{ justifyItems: 'center', display: 'grid' }}>
+              <RatingStars setRate={setRate}/>
+                <div className="alert-msg" style={{ textAlign: "left" }} />
+                <button
+                type='submit'
+                  className="genric-btn primary"
+                  style={{ float: "right" }}
+                  onClick={submitHandler}
+                >
+                  Submit Comment
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
         </>
     )

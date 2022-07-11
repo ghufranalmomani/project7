@@ -29,9 +29,11 @@ return(
     <Route path={'/contact'} element={<Contact />}>Contacy us</Route>
     <Route path={'/map'} element={<SimpleMap />}>map</Route>
     <Route path={'/services'} element={<Services />}>map</Route>
+
     <Route path={'/Signup'} element={<Reg/>}>Signup</Route>
     <Route path={'/login'} element={<Login/>}>Login</Route>
    
+
     </Routes></BrowserRouter>
     <Footer />
 
