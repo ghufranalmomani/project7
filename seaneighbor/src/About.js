@@ -62,16 +62,12 @@ function About(){
             <div className="menu-content pb-70 col-lg-8">
               <div className="title text-center">
                 <h1 className="mb-10">Testimonial from our Clients</h1>
-                <p>
-                  The French Revolution constituted for the conscience of the
-                  dominant aristocratic class a fall from{" "}
-                </p>
               </div>
             </div>
           </div>
           <div className="row">
             <div className="active-testimonial">
-              {/* {commnet.map((comment) =>{
+              {commnet.map((comment) =>{
                 console.log(comment.rating);
                 return(
                               <div className="single-testimonial item d-flex flex-row">
@@ -117,7 +113,7 @@ function About(){
                                   </div>
                               </div>
                             </div>
-              )})} */}
+              )})}
               {/* <div className="single-testimonial item d-flex flex-row">
                 <div className="thumb">
                   <img className="img-fluid" src="img/elements/user2.png" alt="" />

@@ -44,7 +44,7 @@ return(
 
     <Route path={'/Signup'} element={<Reg/>}>Signup</Route>
     <Route path={'/login'} element={<Login/>}>Login</Route>
-    <Route path={'/cal'} element={<Cal/>}>Login</Route>
+    <Route path={'/cal'} element={<Cal/>}>Booth Book</Route>
    
 
     </Routes></BrowserRouter>

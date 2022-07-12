@@ -5,6 +5,8 @@ import RatingStars from './RatingStars';
 
 
 function Services() {
+  let ide= sessionStorage.getItem("user_id");
+
   const [name,setName]=useState('');
   const [email,setEmail]=useState('');
   const [rate,setRate]=useState(null);
@@ -28,10 +30,19 @@ function Services() {
   // },[])
 
   const submitHandler=(event)=>{
+    if (ide == 0) 
+    {
+      event.preventDefault();
+      alert('you need to log in to send a comment');
+      window.location= 'http://localhost:3000/login';
+    }
+    else
+    {
     event.preventDefault();
     axios.post('http://localhost/project7/seaneighbor/php/comments.php?name='+name+'&email='+email+'&message='+message+'&rate='+rate);
     alert('Your comment submitted succefully');
     window.location= 'http://localhost:3000/services';
+    }
   }
     return (
         <>

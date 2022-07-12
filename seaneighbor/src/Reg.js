@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+// import { useForm } from 'react-hook-form';
+// import { yupResolver } from '@hookform/resolvers/yup';
+// import * as yup from 'yup';
 
 // const schema = yup.object().shape({
 //     name: yup.string().required("This field is required"),

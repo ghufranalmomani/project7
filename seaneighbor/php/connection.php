@@ -7,7 +7,7 @@ header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 
     $server = "localhost";
-    $dbname = "project-7";
+    $dbname = "seaneighbor";
     $dbusername = "root";
     $password = "";
 
