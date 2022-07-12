@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Signup from './Signup/Signup';
-
 import Button from 'react-bootstrap/Button';
 
 
@@ -103,12 +102,12 @@ function Naver(props){
             </Nav.Link>
             <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>
           </Nav>
-          <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
+          <Nav.Link href="/login" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
 
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Signup</Nav.Link>
-     <Nav.Link href="/services" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
+     <Nav.Link href="/" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
 
         </Navbar.Collapse>
       </Container>
