@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
-import Nav from './Components/Nav';
-import {$,jQuery} from 'jquery';
 import Form from './Components/form';
+import {$,jQuery} from 'jquery';
+import Forme from './Components/form';
 import Services from './Components/sevices';
 import Naver from './Naver';
 import Footer from './Footer';
@@ -14,19 +14,28 @@ import Contact from './Contact';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SimpleMap from './Components/map';
 import Signup from './Signup/Signup';
+import Reg from './Reg';
+import Login from './Login'
 
 function App() {
+  let id =3;
 return(
   <>
+  
     <Naver />
     {/* <Form /> */}
     <BrowserRouter><Routes>
-    <Route path={'/about'} element={<About />}>About us</Route>
+    <Route path={'/about'} element={<About />} >About us</Route>
+    <Route path={'/form'} element={<Forme />}>About us</Route>
     <Route path={'/'} element={<Home />}>Landing Page</Route>
     <Route path={'/contact'} element={<Contact />}>Contacy us</Route>
     <Route path={'/map'} element={<SimpleMap />}>map</Route>
     <Route path={'/services'} element={<Services />}>map</Route>
-    <Route path={'/signup'} element={<Signup/>}>Signup</Route>
+
+    <Route path={'/Signup'} element={<Reg/>}>Signup</Route>
+    <Route path={'/login'} element={<Login/>}>Login</Route>
+   
+
     </Routes></BrowserRouter>
     <Footer />
 

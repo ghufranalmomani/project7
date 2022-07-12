@@ -287,8 +287,8 @@ function Services() {
                 <input
                   name="name"
                   placeholder="Enter your name"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter your name'"
+                  onFocus="this.placeholder = ''"
+                  onBlur="this.placeholder = 'Enter your name'"
                   className="common-input mb-20 form-control"
                   required=""
                   type="text"
@@ -298,8 +298,8 @@ function Services() {
                   name="email"
                   placeholder="Enter email address"
                   pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter email address'"
+                  onFocus="this.placeholder = ''"
+                  onBlur="this.placeholder = 'Enter email address'"
                   className="common-input mb-20 form-control"
                   required=""
                   type="email"
@@ -311,8 +311,8 @@ function Services() {
                   className="common-textarea form-control"
                   name="message"
                   placeholder="Enter Messege"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Enter Messege'"
+                  onFocus="this.placeholder = ''"
+                  onBlur="this.placeholder = 'Enter Messege'"
                   required=""
                   defaultValue={""}
                   onChange={messageHandle}
@@ -333,6 +333,18 @@ function Services() {
             </div>
           </form>
         </div>
+
+
+        <div>
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27764.911935385284!2d35.01916159171958!3d29.556733703948556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjo!4v1657047509224!5m2!1sen!2sjo"
+          frameBorder={0}
+          style={{ border: 0 }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex={0}
+        />
+      </div>
         </>
     )
 }

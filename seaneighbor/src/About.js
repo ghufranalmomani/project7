@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 
 
 function About(){
+
+  
   const [commnet,setComment]=useState([]);
 
   useEffect(()=>{
@@ -314,6 +316,8 @@ function About(){
           </div>
         </div>
       </div>
+
+   
     </section>
 
 

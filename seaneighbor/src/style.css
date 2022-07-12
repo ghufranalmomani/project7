@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
   }
-  .container {
+  /* .container {
     padding: 16px;
     margin: 16px auto;
-  }
+  } */
   
   .result {
     text-align: center;

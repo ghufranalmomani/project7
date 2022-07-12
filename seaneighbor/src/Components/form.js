@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 
-function Form() {
+function Forme() {
     const [fromDate,setFromDate]=useState(null)
     const [toDate,setToDate]=useState(null)
     const [place,setPlace]=useState(null)
@@ -78,4 +78,4 @@ function Form() {
         </>
     )
 }
-export default Form;
+export default Forme;

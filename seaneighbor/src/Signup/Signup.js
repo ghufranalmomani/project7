@@ -36,7 +36,7 @@ axios.post('http://localhost/project-7-db/',sendData)
     }
    
     else {
-        history(`./Login`);
+        history(`./home`);
     }
 })
 
