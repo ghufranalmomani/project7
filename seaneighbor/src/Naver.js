@@ -64,12 +64,12 @@ function Naver(props){
                   <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-twitter" />
                   </a>
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
+                  {/* <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-dribbble" />
                   </a>
                   <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-behance" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

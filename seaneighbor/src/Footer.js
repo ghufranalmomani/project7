@@ -119,17 +119,17 @@ function topFunction() {
           </div>
         </div>
       </div>
-      <div className="row footer-bottom d-flex justify-content-between align-items-center">
-        <p className="col-lg-8 col-sm-12 footer-text m-0">
+      <div className="row footer-bottom d-flex justify-content-center align-items-center">
+        <p className="col-lg-8 col-sm-12 footer-text m-0 light">
           {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
           Copyright © All rights reserved | This template is made with{" "}
-          <i className="fa fa-heart-o" aria-hidden="true" /> by{" "}
-          <a href="https://colorlib.com" target="_blank">
+          <i className="fa fa-heart-o" aria-hidden="true" /> by Group 4
+          {/* <a href="https://colorlib.com" target="_blank">
             Colorlib
-          </a>
+          </a> */}
           {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
         </p>
-        <div className="col-lg-4 col-sm-12 footer-social">
+        {/* <div className="col-lg-4 col-sm-12 footer-social">
           <a href="#">
             <i className="fa fa-facebook" />
           </a>
@@ -142,7 +142,7 @@ function topFunction() {
           <a href="#">
             <i className="fa fa-behance" />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   </footer>

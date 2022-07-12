@@ -6,7 +6,7 @@ function Cal(){
   let ide= sessionStorage.getItem("user_id");
 
   if (ide == 0) {
-    window.location= 'http://localhost:3000/login'
+    window.location= 'http://localhost:3000/login';
     alert('you need to log in to see this page');
   }
   const [data1, setdata1] = useState('');
