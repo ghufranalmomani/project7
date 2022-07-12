@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react';
 
 
 function About(){
-
-  
   const [commnet,setComment]=useState([]);
 
   useEffect(()=>{
@@ -73,7 +71,7 @@ function About(){
           </div>
           <div className="row">
             <div className="active-testimonial">
-              {commnet.map((comment) =>{
+              {/* {commnet.map((comment) =>{
                 console.log(comment.rating);
                 return(
                               <div className="single-testimonial item d-flex flex-row">
@@ -119,7 +117,7 @@ function About(){
                                   </div>
                               </div>
                             </div>
-              )})}
+              )})} */}
               {/* <div className="single-testimonial item d-flex flex-row">
                 <div className="thumb">
                   <img className="img-fluid" src="img/elements/user2.png" alt="" />
@@ -316,8 +314,6 @@ function About(){
           </div>
         </div>
       </div>
-
-   
     </section>
 
 

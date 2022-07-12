@@ -19,7 +19,7 @@ function About(){
           By The Sea Souk is a large area with 30 dedicated and equipped booths to display the products of small business owners in the most popular area in Aqaba.
           In Souk By The Sea, we cover almost all categories of small businesses and handicrafts, and we make sure that their continuity and support by bringing investors to visit and see business owners on various events and occasions.We have success stories for projects that started small and grew and expanded with us and we are very proud of them and they will always remain a part of ouk By The Sea family.
           </p>
-          <a href="#" className="primary-btn text-uppercase">
+          <a href="/cal" className="primary-btn text-uppercase">
             start now
           </a>
         </div>

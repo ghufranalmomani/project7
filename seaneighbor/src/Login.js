@@ -12,7 +12,7 @@ function Login(){
       axios.get(`http://localhost/project7/seaneighbor/php/readuser.php`)
           .then((response) => {
               setAPIData(response.data);
-            //   console.log(response.data,"res.data")
+              // console.log(response.data,"res.data")
           })
   }, [])
 
@@ -42,12 +42,14 @@ function Login(){
 //    console.log(e, el.email);
 //    console.log('"'+p+'"');
         if(pass ==el.pass&& email == el.email){
-            // console.log(el.id);
+
+            console.log(el.id , 'roa');
             setId(el.id)
+            console.log(el.id, 'bahaa');
             
-            sessionStorage.setItem("user_id", id);
+            sessionStorage.setItem("user_id", el.id);
             let ide= sessionStorage.getItem("user_id"); //// raghad here where i store data
-            // console.log("heh"+ide);
+            console.log("heh"+ide);
             // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
             // let id_user= el.id;
           
@@ -57,7 +59,7 @@ function Login(){
             // setUserId(el.id)
             // setLogin(true)
             // console.log(id_user);
-            // window.location.href = "/";
+            window.location.href = {"/":+el.id};
            
            }else{
             //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
@@ -110,7 +112,7 @@ function Login(){
 
                 <div>
 
-                <button type="submit" className="btn btn-block " style={{backgroundColor: '#FDBE33'}} onClick={handelLog}>Login</button> 
+                <button type="" className="btn btn-block " style={{backgroundColor: '#FDBE33'}} onClick={handelLog}>Login</button> 
                 <p id='regP' className='mt-4'>Do not have an account? <a href="/Signup">Signup</a></p>
                 
                 </div>
