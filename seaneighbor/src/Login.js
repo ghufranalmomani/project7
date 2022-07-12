@@ -12,7 +12,7 @@ function Login(){
       axios.get(`http://localhost/project7/seaneighbor/php/readuser.php`)
           .then((response) => {
               setAPIData(response.data);
-            //   console.log(response.data,"res.data")
+              // console.log(response.data,"res.data")
           })
   }, [])
 
@@ -42,12 +42,14 @@ function Login(){
 //    console.log(e, el.email);
 //    console.log('"'+p+'"');
         if(pass ==el.pass&& email == el.email){
-            // console.log(el.id);
+
+            console.log(el.id , 'roa');
             setId(el.id)
+            console.log(id, 'bahaa');
             
             sessionStorage.setItem("user_id", id);
             let ide= sessionStorage.getItem("user_id"); //// raghad here where i store data
-            // console.log("heh"+ide);
+            console.log("heh"+ide);
             // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
             // let id_user= el.id;
           
@@ -57,7 +59,7 @@ function Login(){
             // setUserId(el.id)
             // setLogin(true)
             // console.log(id_user);
-            // window.location.href = "/";
+            window.location.href = {"/":+el.id};
            
            }else{
             //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');

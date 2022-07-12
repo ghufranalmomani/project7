@@ -10,14 +10,20 @@ import Button from 'react-bootstrap/Button';
 
 
 
-function Naver(test){
-  let id = sessionStorage.getItem("user_id"); //// raghad here where i call data
+function Naver(props){
+  let id =props.user_id;
+  
+  // let id = sessionStorage.getItem("user_id"); //// raghad here where i call data
+  console.log(id , 'nav');
 
   let state = false ;
 
-  if( id !== 0)
+  if( id != 0)
   {
     state = true;
+  }else {
+
+    state = false;
   }
 
       const [login,set_logged] = useState(state);
@@ -25,13 +31,16 @@ function Naver(test){
       const logout =(event)=>{
         event.preventDefault();
 
+        id= 0;
         sessionStorage.setItem("user_id" , 0);   //// raghad here where i call data
         // console.log("heh"+id+is_logged);
+        state = false;
         set_logged(false);
     
        }  
   
- 
+ console.log(login);
+ console.log(id);
     return(
         <>
 <header id="header" >
@@ -41,10 +50,10 @@ function Naver(test){
               <div className="col-lg-6 col-sm-6 col-6 header-top-left">
                 <ul>
                   <li>
-                    <a href="#">Visit Us</a>
+                    <a href="/contact">Visit Us</a>
                   </li>
                   <li>
-                    <a href="#">Book Booth</a>
+                    <a href="/cal">Book Booth</a>
                   </li>
                 </ul>
               </div>
@@ -86,7 +95,7 @@ function Naver(test){
             navbarScroll
           >
             <Nav.Link href="/" className='text-white mr-3'>Home</Nav.Link>
-            <Nav.Link href="#action1" className='text-white mr-3'>Book Booth</Nav.Link>
+            <Nav.Link href="/cal" className='text-white mr-3'>Book Booth</Nav.Link>
             <Nav.Link href="/services" className='text-white mr-3'>Services</Nav.Link>
            
             <Nav.Link href="/about" className='text-white mr-3'>
@@ -96,10 +105,10 @@ function Naver(test){
           </Nav>
           <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
 
-    height: '45px',textAlign: 'center', display: login ? 'none': 'block'}}>Login</Nav.Link>
+    height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
-    height: '45px',textAlign: 'center', display: login ? 'none': 'block'}}>Signup</Nav.Link>
-     <Nav.Link href="/services" className='text-white mr-3' style={{display: login ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
+    height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Signup</Nav.Link>
+     <Nav.Link href="/services" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
 
         </Navbar.Collapse>
       </Container>

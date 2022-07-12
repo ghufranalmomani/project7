@@ -38,9 +38,9 @@ function Event(){
                   Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
                   facili ornare velit non vulpte liqum metus tortor
                 </p>
-                <a className=" primary-btn text-uppercase mt-5" href="">
+                {/* <a className=" primary-btn text-uppercase mt-5" href="">
                   Join Now
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -71,9 +71,9 @@ function Event(){
                   Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
                   facili ornare velit non vulpte liqum metus tortor
                 </p>
-                <a className="primary-btn text-uppercase mt-5" href="">
+                {/* <a className="primary-btn text-uppercase mt-5" href="">
                   Join Now
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

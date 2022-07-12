@@ -4,6 +4,15 @@ import axios from 'axios';
 
 
 function Head(){
+
+  let ide = sessionStorage.getItem("user_id"); //// raghad here where i call data
+  console.log(ide, 'bahaa1');
+
+
+ 
+
+  //   console.log(ide);
+
   const [fromDate,setFromDate]=useState(null)
   const [toDate,setToDate]=useState(null)
   const [place,setPlace]=useState(null)
@@ -44,7 +53,14 @@ function Head(){
           // console.log(data[0]);
       })
   },[])
-  const submithandler=()=>{axios.post('http://localhost/project7/seaneighbor/php/connect.php?date='+fromDate+'datee='+toDate+'&place='+place+'&table='+table)}
+  const submithandler=(event)=>{
+    event.preventDefault();
+   
+    axios.post('http://localhost/project7/seaneighbor/php/connect.php?date='+fromDate+'datee='+toDate+'&place='+place+'&table='+table)
+   
+ 
+    
+  }
     return(
         <>
          {/* start footer Area */}
@@ -156,134 +172,7 @@ function Head(){
                 </button>
               </form>
             </div>
-            <div
-              className="tab-pane fade"
-              id="hotel"
-              role="tabpanel"
-              aria-labelledby="hotel-tab"
-            >
-              <form className="form-wrap">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  placeholder="From "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'From '"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  name="to"
-                  placeholder="To "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'To '"
-                />
-                <input
-                  type="text"
-                  className="form-control date-picker"
-                  name="start"
-                  placeholder="Start "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Start '"
-                />
-                <input
-                  type="text"
-                  className="form-control date-picker"
-                  name="return"
-                  placeholder="Return "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Return '"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={20}
-                  className="form-control"
-                  name="adults"
-                  placeholder="Adults "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Adults '"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={20}
-                  className="form-control"
-                  name="child"
-                  placeholder="Child "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Child '"
-                />
-                <a href="#" className="primary-btn text-uppercase">
-                  Search Hotels
-                </a>
-              </form>
-            </div>
-            <div
-              className="tab-pane fade"
-              id="holiday"
-              role="tabpanel"
-              aria-labelledby="holiday-tab"
-            >
-              <form className="form-wrap">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  placeholder="From "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'From '"
-                />
-                <input
-                  type="text"
-                  className="form-control"
-                  name="to"
-                  placeholder="To "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'To '"
-                />
-                <input
-                  type="text"
-                  className="form-control date-picker"
-                  name="start"
-                  placeholder="Start "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Start '"
-                />
-                <input
-                  type="text"
-                  className="form-control date-picker"
-                  name="return"
-                  placeholder="Return "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Return '"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={20}
-                  className="form-control"
-                  name="adults"
-                  placeholder="Adults "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Adults '"
-                />
-                <input
-                  type="number"
-                  min={1}
-                  max={20}
-                  className="form-control"
-                  name="child"
-                  placeholder="Child "
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Child '"
-                />
-                <a href="#" className="primary-btn text-uppercase">
-                  Book Your Both
-                </a>
-              </form>
-            </div>
+           
           </div>
         </div>
       </div>
