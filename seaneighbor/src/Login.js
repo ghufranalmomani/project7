@@ -59,12 +59,10 @@ function Login(){
             // setUserId(el.id)
             // setLogin(true)
             // console.log(id_user);
-<<<<<<< HEAD
+
             window.location.href = {"/":+el.id};
             
-=======
-            window.location.href = "/";
->>>>>>> d3750dc584ca29273cba2fe7ed184dcfdf628a40
+
            
            }else{
             //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
