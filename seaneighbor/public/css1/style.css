@@ -43,12 +43,14 @@ a {
   outline: none; }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: 120vh;
   position: relative;
   background: url("../img/4.jpg") no-repeat right center;
   background-size: cover; }
 
 .inner {
+  margin-top: 20px ;
+
   position: absolute;
   top: 50%;
   left: 11.07%;
@@ -63,6 +65,8 @@ a {
   padding: 7px; }
 
 form {
+  /* margin-top: 20px;
+  margin-bottom: 100px; */
   width: 100%;
   padding: 57px 46px 55px;
   background: #fff; }

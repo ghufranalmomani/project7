@@ -3,11 +3,33 @@ import React, { useState, useEffect } from 'react';
 
 
 function Cal(){
+  const [data1, setdata1] = useState('');
+  const [date2, setdate2] = useState('');
+ 
 
+  const data1Handel = (e)=>{setdata1(e.target.value)}
+  const date2Handel = (e)=>{setdate2(e.target.value)}
+  var dt1 = new Date(data1);
+  var dt2 = new Date(date2)
+  const diffTime = Math.abs(dt2 - dt1);
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+let price = 0;
+if (diffDays < 7){
+price = diffDays *5 
+} else if (diffDays < 31){
+  price = (diffDays) *3.57
+}else if (diffDays > 30){
+  price = (diffDays) *3
+}
+console.log(price);
 
+  console.log(diffDays, 'date');
+  // const d1= data1.setHours(0, 0, 0, 0);
+  // let day= Date.parse(date2) - Date.parse(data1)
+//  console.log(d1 , 'date');
     return(
         <div className="wrapper">
-  <div className="inner mt-5">
+  <div className="inner " >
     <form action="">
       <h3>Find a Room</h3>
       <div className="form-row flex-nowrap">
@@ -30,6 +52,7 @@ function Cal(){
             data-language="en"
             data-date-format="dd M yyyy"
             id="dp1"
+            onChange={data1Handel}
           />
         </div>
         <div className="form-wrapper">
@@ -41,6 +64,7 @@ function Cal(){
             data-language="en"
             data-date-format="dd M yyyy"
             id="dp2"
+            onChange={date2Handel}
           />
         </div>
       </div>
@@ -48,7 +72,7 @@ function Cal(){
       <div className='row'>
       <label htmlFor="">Any note you want to tell us</label>
       </div>
-      <br></br><textarea   className="form-control "></textarea>
+      <br></br><textarea style={{height: '100px'}}  className="form-control " rows="4"></textarea>
      
         {/* <div className="form-wrapper">
           <label htmlFor="">Adults *</label>
@@ -76,8 +100,8 @@ function Cal(){
         </div> */}
       </div>
       <div className="checkbox">
-        <p>Total Price:</p>
-        <p>12.52 JD</p>
+        <p style={{margin:'0'}}>Total Price:</p>
+        <p>{price}</p>
         {/* <label>
           <input type="checkbox" /> No one rejects, dislikes, or avoids pleasure
           itself.

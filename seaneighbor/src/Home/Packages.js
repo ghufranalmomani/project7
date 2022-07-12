@@ -73,7 +73,7 @@ function Packages(){
                 <li className="d-flex justify-content-between align-items-center">
                   <span>Price per person</span>
                   <a href="#" className="price-btn">
-                    20 JD
+                    25JD
                   </a>
                 </li>
               </ul>
@@ -104,7 +104,7 @@ function Packages(){
                 <li className="d-flex justify-content-between align-items-center">
                   <span>Price per person</span>
                   <a href="#" className="price-btn">
-                    80 JD
+                    90 JD
                   </a>
                 </li>
               </ul>
