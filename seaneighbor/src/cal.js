@@ -31,7 +31,7 @@ console.log(price);
         <div className="wrapper">
   <div className="inner " >
     <form action="">
-      <h3>Find a Room</h3>
+      <h3>Find a Booth</h3>
       <div className="form-row flex-nowrap">
         <div className="form-wrapper">
           <label htmlFor="">Name *</label>
@@ -109,7 +109,7 @@ console.log(price);
         </label> */}
       </div>
       <button data-text="Book Room">
-        <span>Book Room</span>
+        <span>Book</span>
       </button>
     </form>
   </div>
