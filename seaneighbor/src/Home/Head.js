@@ -6,7 +6,7 @@ import axios from 'axios';
 function Head(){
 
   let ide = sessionStorage.getItem("user_id"); //// raghad here where i call data
-  console.log(ide, 'bahaa1');
+  console.log(ide, 'bahaa');
 
 
  
@@ -68,22 +68,24 @@ function Head(){
    <section className="banner-area relative">
     <div className="overlay overlay-bg" />
     <div className="container">
-      <div className="row fullscreen align-items-center justify-content-between">
-        <div className="col-lg-6 col-md-6 banner-left" style={{ marginTop:'130px' }}>
-          <h6 className="text-white">Away to growth your small business</h6>
+      <div className="row fullscreen align-items-center justify-content-center text-center">
+        <div className="col-lg-12 col-md-6 banner-left" style={{ marginTop:'130px' }}>
+          <h4 className="text-white mt-5">Away to growth your small business</h4>
           <h1 className="text-white">Souk By The Sea</h1>
-          <p className="text-white">
-            If you are looking space to grow your small business, you may be very
-            confused about the place and price. We provide that at nominal prices.
+        
+          <p className="text-white mb-5" style={{fontSize:'large'}}>
+            If you are looking sh5ace to grow your small business, you may be very
+            confused  about the place and price.<br></br> We provide that at nominal prices.
           </p>
-          <a href="#" className="primary-btn text-uppercase">
+          
+          <a href="#" className="primary-btn text-uppercase ">
             Get Started
           </a>
         </div>
         <div className="col-lg-4 col-md-6 banner-right " style={{ marginTop:'130px' }} >
           <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item">
-              <a
+              {/* <a
                 className="nav-link active"
                 id="flight-tab"
                 data-toggle="tab"
@@ -93,7 +95,7 @@ function Head(){
                 aria-selected="true"
               >
                reserve now !!
-              </a>
+              </a> */}
             </li>
             {/* <li className="nav-item">
               <a
@@ -129,11 +131,11 @@ function Head(){
               role="tabpanel"
               aria-labelledby="flight-tab"
             >
-              <form className="form-wrap">
+              {/* <form className="form-wrap">
                 <div className="form-floating">
                   <input type="date" className="form-control border-0 bg-light" id="from" name="from" onChange={fromDateHandel}/>
                   <label for="from">Date</label>
-                </div>
+                </div> */}
                 {/* <div className="form-floating">
                   <input type="text" className="form-control border-0 bg-light" placeholder='your name' id="name" name="name" />
                   <label for="name">Name</label>
@@ -147,7 +149,7 @@ function Head(){
                   <label for="email">email</label>
                 </div> */}
                 
-                <div className="form-floating">
+                {/* <div className="form-floating">
                   <select className="form-control form-select border-0 bg-light"  id="table" name="table" onChange={placehandel}>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -170,7 +172,7 @@ function Head(){
                 <button type='submit' onClick={submithandler} className={`primary-btn text-uppercase ${lig}`}>
                 Book Your Both
                 </button>
-              </form>
+              </form> */}
             </div>
            
           </div>

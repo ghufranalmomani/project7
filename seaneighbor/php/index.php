@@ -26,7 +26,7 @@ $password = $data->password;
 $servername = "localhost";
 $username   = "root";
 $passsword   = "";
-$dbname     = "project-7";
+$dbname     = "seaneighbor";
 // Create connection
 $con = new mysqli($servername, $username, $passsword, $dbname);
 

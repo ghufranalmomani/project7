@@ -41,11 +41,11 @@ function Login(){
   
 //    console.log(e, el.email);
 //    console.log('"'+p+'"');
-        if(pass ==el.pass&& email == el.email){
+        if(pass == el.pass && email == el.email){
 
-            console.log(el.id , 'roa');
-            setId(el.id)
-            console.log(el.id, 'bahaa');
+            // console.log(el.id , 'roa');
+            // setId(el.id)
+            // console.log(el.id, 'bahaa');
             
             sessionStorage.setItem("user_id", el.id);
             let ide= sessionStorage.getItem("user_id"); //// raghad here where i store data
@@ -59,7 +59,10 @@ function Login(){
             // setUserId(el.id)
             // setLogin(true)
             // console.log(id_user);
-            window.location.href = "/";
+
+            window.location.href = {"/":+el.id};
+            
+
            
            }else{
             //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
@@ -92,6 +95,7 @@ function Login(){
                         name="email"
                         onChange={ emailHandel}
                         className="form-control"
+                        required
                     />
                        <p id="e1" style={{color:'red', display:'none'}}> Invalid email</p>
                    
@@ -105,6 +109,7 @@ function Login(){
                         name="pass"
                         onChange={passHandel}
                         className="form-control"
+                        required
                     />
                     <p id="e2" style={{color:'red', display:'none'}}> Invalid password</p>
                   

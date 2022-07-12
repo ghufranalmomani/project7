@@ -47,13 +47,13 @@ function topFunction() {
               <div className="col">
                 <ul>
                   <li>
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="#">Feature</a>
+                    <a href="#Features">Feature</a>
                   </li>
                   <li>
-                    <a href="#">Services</a>
+                    <a href="/services">Services</a>
                   </li>
                   <li>
                     <a href="#event">event</a>
@@ -63,16 +63,16 @@ function topFunction() {
               <div className="col" >
                 <ul style={{padding:'0px'}}>
                   <li>
-                    <a href="#">Team</a>
+                    <a href="/about">ABOUT</a>
                   </li>
                   <li>
-                    <a href="#">Pricing</a>
+                    <a href="#Packages">Packages</a>
                   </li>
+                  {/* <li>
+                    <a href="/book">Book</a>
+                  </li> */}
                   <li>
-                    <a href="#">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact</a>
+                    <a href="/contact">Contact</a>
                   </li>
                 </ul>
               </div>

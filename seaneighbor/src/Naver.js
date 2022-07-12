@@ -20,10 +20,10 @@ function Naver(props){
   if( id != 0)
   {
     state = true;
-  }else {
+   }else if( id == null || id == 0) {
 
     state = false;
-  }
+  } 
 
       const [login,set_logged] = useState(state);
 
