@@ -58,16 +58,16 @@ function Naver(props){
               </div>
               <div className="col-lg-6 col-sm-6 col-6 header-top-right">
                 <div className="header-social">
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-facebook" />
                   </a>
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-dribbble" />
                   </a>
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-behance" />
                   </a>
                 </div>

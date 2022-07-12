@@ -20,7 +20,7 @@ function About(){
         <div className="overlay overlay-bg" />
         <div className="container">
           <div className="row d-flex align-items-center justify-content-center">
-            <div className="about-content col-lg-12">
+            <div className="mt-5 about-content col-lg-12">
               <h1 className="text-white">About Us</h1>
               <p className="text-white link-nav">
                 <a href="/">Home </a>{" "}
@@ -37,9 +37,9 @@ function About(){
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 info-left">
-              <img className="img-fluid" src="https://cdn.discordapp.com/attachments/962769580818858015/994507587389247488/2.jpg" alt="" />
+              <img className="mt-5 img-fluid" src="https://cdn.discordapp.com/attachments/962769580818858015/994507587389247488/2.jpg" alt="" />
             </div>
-            <div className="col-lg-6 info-right">
+            <div className="mt-5 col-lg-6 info-right">
               <h6>About Us</h6>
               <h1>Who We Are?</h1>
               <p>
@@ -55,8 +55,156 @@ function About(){
       </section>
       {/* End about-info Area */}
 
-      {/* Start testimonial Area */}
-      <section className="testimonial-area section-gap">
+     
+      {/* Start our team area */}
+      <section id="team">
+      <div className="container my-3 py-5 text-center">
+        <div className="row mb-5">
+          <div className="col">
+            <h1>Our Team</h1>
+            <p className="my-3">
+
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-3 col-md-6 pt-1">
+            <div className="card h-100">
+              <div className="card-body">
+                <img
+                  className="img-fouild rounded w-75 mb-3"
+                  src="https://avatars.githubusercontent.com/u/100237201?v=4"
+                  alt="Sophie"
+                />
+                <h5>Hadi AL-Saden</h5>
+                <h5>Software Engineer</h5>
+                <p>
+              
+                </p>
+                <div className="d-flex flex-row justify-content-center">
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/hadi-alsaden-174408232/"target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://github.com/Hadi-AL-Saden"target="_blank">
+                    <i className="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/hadi-alsaden-174408232/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 pt-1">
+            <div className="card h-100">
+              <div className="card-body">
+                <img
+                  className="img-fouild rounded w-75 mb-3"
+                  src="https://avatars.githubusercontent.com/u/100368515?v=4"
+                  alt="lucy"
+                />
+                <h5>Ghufran Almomani</h5>
+                <h5>Product Owner</h5>
+                <p>
+              
+                </p>
+                <div className="d-flex flex-row justify-content-center">
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/ghufran-almomani-777b93232/"target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://github.com/ghufranalmomani"target="_blank">
+                    <i className="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/ghufran-almomani-777b93232/"target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 pt-1">
+            <div className="card h-100">
+              <div className="card-body">
+                <img
+                  className="img-fouild rounded w-75 mb-3"
+                  src="https://avatars.githubusercontent.com/u/100212231?v=4"
+                  alt="Brad"
+                />
+                <h5>Anas Allawafeh</h5>
+                <h5>Scrum Master</h5>
+                <p>
+                
+                </p>
+                <div className="d-flex flex-row justify-content-center">
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/anas-al-lawafeh-b05954232/"target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://github.com/10-anasAllawafeh"target="_blank">
+                    <i className="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/anas-al-lawafeh-b05954232/"target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-6 pt-1">
+            <div className="card h-100">
+              <div className="card-body">
+                <img
+                  className="img-fouild rounded w-75 mb-3"
+                  src="https://avatars.githubusercontent.com/u/100063786?v=4"
+                  alt="andres"
+                />
+                <h5>Ro'a Yaseen</h5>
+                <h5>Software Engineer</h5>
+                <p>
+                
+                </p>
+                <div className="d-flex flex-row justify-content-center">
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/roayaseen/"target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://github.com/roayas"target="_blank">
+                    <i className="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div className="p-4">
+                    <a href="https://www.linkedin.com/in/roayaseen/"target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     {/* Start testimonial Area */}
+     <section className="testimonial-area section-gap">
         <div className="container">
           <div className="row d-flex justify-content-center">
             <div className="menu-content pb-70 col-lg-8">
@@ -72,14 +220,12 @@ function About(){
                 return(
                               <div className="single-testimonial item d-flex flex-row">
                               <div className="thumb">
-                                <img className="img-fluid" src="img/elements/user3.png" alt="" height={100} width={100}/>
+                                <img className="img-fluid" src="img/elements/user3.png" alt="" height={60} width={60}/>
                               </div>
+
                               <div className="desc">
-                                <p>
-                                  {comment.body}
-                                </p>
-                                <h4>{comment.user_id}</h4>
-                                <div className="star">
+
+                              <div className="star">
                                   {comment.rating == 1 ? <>
                                   <span className="fa fa-star checked" />
                                   <span className="fa fa-star" />
@@ -111,6 +257,11 @@ function About(){
                                   <span className="fa fa-star checked" />
                                   <span className="fa fa-star checked" /></> : ''}
                                   </div>
+                                <h6>
+                                  {comment.user_id}
+                                </h6>
+                                <p>{comment.body}</p>
+                                
                               </div>
                             </div>
               )})}
@@ -159,158 +310,6 @@ function About(){
         </div>
       </section>
       {/* End testimonial Area */}
-      {/* Start our team area */}
-      <section id="team">
-      <div className="container my-3 py-5 text-center">
-        <div className="row mb-5">
-          <div className="col">
-            <h1>Our Team</h1>
-            <p className="my-3">
-              This team page has a quirky, vibrant energy that immediately catches
-              your attention – a good sign for a design company.
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-3 col-md-6 pt-1">
-            <div className="card h-100">
-              <div className="card-body">
-                <img
-                  className="img-fouild rounded w-75 mb-3"
-                  src="https://avatars.githubusercontent.com/u/100237201?v=4"
-                  alt="Sophie"
-                />
-                <h4>Hadi AL-Saden</h4>
-                <h5>Software Engineer</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
-                  recusandae.
-                </p>
-                <div className="d-flex flex-row justify-content-center">
-                  <div className="p-4">
-                    <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 pt-1">
-            <div className="card h-100">
-              <div className="card-body">
-                <img
-                  className="img-fouild rounded w-75 mb-3"
-                  src="https://avatars.githubusercontent.com/u/100368515?v=4"
-                  alt="lucy"
-                />
-                <h4>Ghufran Almomani</h4>
-                <h5>Product Owner</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
-                  recusandae.
-                </p>
-                <div className="d-flex flex-row justify-content-center">
-                  <div className="p-4">
-                    <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 pt-1">
-            <div className="card h-100">
-              <div className="card-body">
-                <img
-                  className="img-fouild rounded w-75 mb-3"
-                  src="https://avatars.githubusercontent.com/u/100212231?v=4"
-                  alt="Brad"
-                />
-                <h4>Anas Allawafeh</h4>
-                <h5>Scrum Master</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
-                  recusandae.
-                </p>
-                <div className="d-flex flex-row justify-content-center">
-                  <div className="p-4">
-                    <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 pt-1">
-            <div className="card h-100">
-              <div className="card-body">
-                <img
-                  className="img-fouild rounded w-75 mb-3"
-                  src="https://avatars.githubusercontent.com/u/100063786?v=4"
-                  alt="andres"
-                />
-                <h4>Ro'a Yaseen</h4>
-                <h5>Software Engineer</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
-                  recusandae.
-                </p>
-                <div className="d-flex flex-row justify-content-center">
-                  <div className="p-4">
-                    <a href="#">
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                  </div>
-                  <div className="p-4">
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 

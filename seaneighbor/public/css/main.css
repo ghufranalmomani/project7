@@ -48,6 +48,66 @@ $black			: #222;
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+
+h1 {
+  font-size: 36px;
+  color: #555;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+#team i {
+  font-size: 26px;
+  color: #555;
+}
+
+#team p {
+  font-weight: 500;
+}
+
+#team .card {
+  border-radius: 0;
+  box-shadow: 5px 5px 15px #f8b600;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+}
+
+#team .card:hover {
+  background:#f8b600;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 5px 5px 10px #9e9e9e;
+}
+
+#team .card:hover h3,
+#team .card:hover i {
+  color: #fff;
+}
+
+
+
+
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #f8b600;
@@ -3005,7 +3065,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-banner {
-  background: url(../img/top-banner.jpg) center;
+  background: url(https://cdn.discordapp.com/attachments/962769580818858015/994507823612440616/17.jpg) center;
   background-size: cover;
 }
 

@@ -14,7 +14,7 @@ function Contact(){
     <div className="overlay overlay-bg" />
     <div className="container">
       <div className="row d-flex align-items-center justify-content-center">
-        <div className="about-content col-lg-12">
+        <div className="mt-5 about-content col-lg-12">
           <h1 className="text-white">Contact Us</h1>
           <p className="text-white link-nav">
             <a href="/">Home </a>{" "}
@@ -30,14 +30,14 @@ function Contact(){
   <section className="contact-page-area section-gap">
     <div className="container">
       <div className="row">
-        <div className="col-lg-4 d-flex flex-column address-wrap">
+        <div className="mt-5 col-lg-4 d-flex flex-column address-wrap">
           <div className="single-contact-address d-flex flex-row">
             <div className="icon">
               <span className="lnr lnr-home" />
             </div>
             <div className="contact-details">
-              <h5>Binghamton, New York</h5>
-              <p>4343 Hinkle Deegan Lake Road</p>
+              <h5>Jordan, Aqaba</h5>
+              <p>Aqaba,Coding Academy By Orange</p>
             </div>
           </div>
           <div className="single-contact-address d-flex flex-row">
@@ -45,8 +45,8 @@ function Contact(){
               <span className="lnr lnr-phone-handset" />
             </div>
             <div className="contact-details">
-              <h5>00 (958) 9865 562</h5>
-              <p>Mon to Fri 9am to 6 pm</p>
+              <h5>0778931789</h5>
+              <p>Mon to Fri 9 am to 6 pm</p>
             </div>
           </div>
           <div className="single-contact-address d-flex flex-row">
@@ -54,8 +54,8 @@ function Contact(){
               <span className="lnr lnr-envelope" />
             </div>
             <div className="contact-details">
-              <h5>support@colorlib.com</h5>
-              <p>Send us your query anytime!</p>
+              <h5>suke@gmail.com</h5>
+              <p>Send Us Your Message Anytime!</p>
             </div>
           </div>
         </div>
@@ -122,12 +122,23 @@ function Contact(){
           </form>
         </div>
       </div>
-      <div style={{ height: '100vh', width: '100%' }}>
+      {/* <div style={{ height: '100vh', width: '100%' }}> */}
       {/* <SimpleMap /> */}
-    </div>
+    {/* </div> */}
     </div>
   </section>
   {/* End contact-page Area */}
+
+  <div className='container mb-5'>
+      <iframe height={400}width={1100}
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27764.911935385284!2d35.01916159171958!3d29.556733703948556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sjo!4v1657047509224!5m2!1sen!2sjo"
+          frameBorder={0}
+          style={{ border: 0 }}
+          allowFullScreen=""
+          aria-hidden="false"
+          tabIndex={0}
+        />
+      </div>
  
 </>
 
