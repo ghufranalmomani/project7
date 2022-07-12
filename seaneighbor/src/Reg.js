@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+
 
 // const schema = yup.object().shape({
 //     name: yup.string().required("This field is required"),
@@ -229,6 +227,7 @@ export default class UserForm extends Component {
                         className={isError.name.length > 0 ? "is-invalid form-control" : "form-control"}
                         name="name"
                         onChange={this.formValChange}
+                        required
                     />
                     {isError.name.length > 0 && (
                         <span className="invalid-feedback">{isError.name}</span>
@@ -242,6 +241,7 @@ export default class UserForm extends Component {
                         className={isError.email.length > 0 ? "is-invalid form-control" : "form-control"}
                         name="email"
                         onChange={this.formValChange}
+                        required
                     />
                     {isError.email.length > 0 && (
                         <span className="invalid-feedback">{isError.email}</span>
@@ -255,6 +255,7 @@ export default class UserForm extends Component {
                         className={isError.pass.length > 0 ? "is-invalid form-control" : "form-control"}
                         name="pass"
                         onChange={this.formValChange}
+                        required
                     />
                     {isError.pass.length > 0 && (
                         <span className="invalid-feedback">{isError.pass}</span>
@@ -268,6 +269,7 @@ export default class UserForm extends Component {
                         className={isError.phone.length > 0 ? "is-invalid form-control" : "form-control"}
                         name="phone"
                         onChange={this.formValChange}
+                        required
                     />
                     {isError.phone.length > 0 && (
                         <span className="invalid-feedback">{isError.phone}</span>
