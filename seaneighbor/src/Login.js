@@ -45,9 +45,9 @@ function Login(){
 
             console.log(el.id , 'roa');
             setId(el.id)
-            console.log(id, 'bahaa');
+            console.log(el.id, 'bahaa');
             
-            sessionStorage.setItem("user_id", id);
+            sessionStorage.setItem("user_id", el.id);
             let ide= sessionStorage.getItem("user_id"); //// raghad here where i store data
             console.log("heh"+ide);
             // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
@@ -112,7 +112,7 @@ function Login(){
 
                 <div>
 
-                <button type="submit" className="btn btn-block " style={{backgroundColor: '#FDBE33'}} onClick={handelLog}>Login</button> 
+                <button type="" className="btn btn-block " style={{backgroundColor: '#FDBE33'}} onClick={handelLog}>Login</button> 
                 <p id='regP' className='mt-4'>Do not have an account? <a href="/Signup">Signup</a></p>
                 
                 </div>

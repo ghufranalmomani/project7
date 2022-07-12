@@ -29,7 +29,7 @@ function Naver(props){
       const [login,set_logged] = useState(state);
 
       const logout =(event)=>{
-        event.preventDefault();
+        // event.preventDefault();
 
         id= 0;
         sessionStorage.setItem("user_id" , 0);   //// raghad here where i call data

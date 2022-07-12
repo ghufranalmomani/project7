@@ -44,9 +44,10 @@ function Cal(){
           />
         </div>
       </div>
-      <div className="form-row last flex-nowrap">
-     
-      <label htmlFor="">Any note you want to tell us*</label>
+      <div className="form-row last ">
+      <div className='row'>
+      <label htmlFor="">Any note you want to tell us</label>
+      </div>
       <br></br><textarea   className="form-control "></textarea>
      
         {/* <div className="form-wrapper">
@@ -75,11 +76,13 @@ function Cal(){
         </div> */}
       </div>
       <div className="checkbox">
-        <label>
+        <p>Total Price:</p>
+        <p>12.52 JD</p>
+        {/* <label>
           <input type="checkbox" /> No one rejects, dislikes, or avoids pleasure
           itself.
           <span className="checkmark" />
-        </label>
+        </label> */}
       </div>
       <button data-text="Book Room">
         <span>Book Room</span>
