@@ -6,6 +6,12 @@ import RatingStars from './Components/RatingStars'
 
 function Contact(){
 
+
+  const mesHandle=(e)=>{
+    e.preventDefault();
+    alert('Thank you , we will contact you soon');
+    window.location= '/contact';
+  }
     return(
 
 <>
@@ -63,7 +69,7 @@ function Contact(){
           <form
             className="form-area contact-form text-right"
             id="myForm"
-            action="mail.php"
+            action=""
             method="post"
           >
             <div className="row">
@@ -86,6 +92,7 @@ function Contact(){
                   className="common-input mb-20 form-control"
                   required="true"
                   type="email"
+                  
                 />
                 <input
                   name="subject"
@@ -114,6 +121,7 @@ function Contact(){
                 <button
                   className="genric-btn primary"
                   style={{ float: "right" }}
+                  onClick={mesHandle}
                 >
                   Send Message
                 </button>

@@ -10,13 +10,13 @@ import Button from 'react-bootstrap/Button';
 
 
 function Naver(props){
+  
   let id =props.user_id;
   
   // let id = sessionStorage.getItem("user_id"); //// raghad here where i call data
   console.log(id , 'nav');
 
   let state = false ;
-
   if( id != 0)
   {
     state = true;
