@@ -80,7 +80,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter your name'"
                   className="common-input mb-20 form-control"
-                  required
+                  required="true"
                   type="text"
                 />
                 <input

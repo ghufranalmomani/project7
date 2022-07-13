@@ -16,13 +16,15 @@ try {
 }
 
 if (isset($_REQUEST['date'])) {
-    $date=$_REQUEST['date'];
-    $datee=$_REQUEST['datee'];
-    $price=$_REQUEST['price'];
-    $phone=$_REQUEST['phone'];
-    $name=$_REQUEST['name'];
+    $from_date    =$_REQUEST['date'];
+    $to_date      =$_REQUEST['datee'];
+    $price        =$_REQUEST['price'];
+    $phone        =$_REQUEST['phone'];
+    $name         =$_REQUEST['name'];
+    $booth        =$_REQUEST['booth'];
+    $place        =$_REQUEST['place'];
 
-    $st=$db->prepare("INSERT INTO reservation (from_date,to_date,price,phone,user_name) VALUES('$date','$datee','$price','$phone','$name')");
+    $st=$db->prepare("INSERT INTO reservation (from_date,to_date,price,phone,user_name,booth,place) VALUES('$from_date','$to_date','$price','$phone','$name','$booth','$place')");
     $st->execute();
 }
 else{
