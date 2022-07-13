@@ -129,7 +129,7 @@ useEffect(()=>{
           <span className="checkmark" />
         </label> */}
       </div>
-      <button data-text="Book Room" type='submit' onClick={handleForm}>
+      <button data-text="Book Booth" type='submit' onClick={handleForm}>
         <span>Book</span>
       </button>
     </form>

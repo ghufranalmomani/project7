@@ -78,7 +78,7 @@ function Head(){
             confused  about the place and price.<br></br> We provide that at nominal prices.
           </p>
           
-          <a href="#" className="primary-btn text-uppercase ">
+          <a href="/cal" className="primary-btn text-uppercase ">
             Get Started
           </a>
         </div>

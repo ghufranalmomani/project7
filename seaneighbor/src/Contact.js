@@ -74,7 +74,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter your name'"
                   className="common-input mb-20 form-control"
-                  required=""
+                  required="true"
                   type="text"
                 />
                 <input
@@ -84,7 +84,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter email address'"
                   className="common-input mb-20 form-control"
-                  required=""
+                  required="true"
                   type="email"
                 />
                 <input
@@ -93,7 +93,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter subject'"
                   className="common-input mb-20 form-control"
-                  required=""
+                  required="true"
                   type="text"
                 />
               </div>
@@ -104,7 +104,7 @@ function Contact(){
                   placeholder="Enter Messege"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter Messege'"
-                  required=""
+                  required="true"
                   defaultValue={""}
                 />
               </div>
