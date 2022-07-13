@@ -59,16 +59,16 @@ function Naver(props){
               </div>
               <div className="col-lg-6 col-sm-6 col-6 header-top-right">
                 <div className="header-social">
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-facebook" />
                   </a>
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-dribbble" />
                   </a>
-                  <a href="#">
+                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-behance" />
                   </a>
                 </div>
@@ -103,7 +103,7 @@ function Naver(props){
             </Nav.Link>
             <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>
           </Nav>
-          <Nav.Link href="#action2" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
+          <Nav.Link href="/login" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
 
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
