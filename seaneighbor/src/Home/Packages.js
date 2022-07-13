@@ -5,7 +5,7 @@ function Packages(){
  
     return(
         <>
-  <section className="destinations-area section-gap">
+  <section className="destinations-area section-gap" id='Packages'>
     <div className="container">
       <div className="row d-flex justify-content-center">
         <div className="menu-content pb-40 col-lg-8">

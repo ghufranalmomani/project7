@@ -1,5 +1,5 @@
 <?php
-// include_once "./connection.php";
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: *");
 header("Access-Control-Allow-Headers: access");
@@ -15,26 +15,20 @@ try {
     echo "error accoured, erros message is :". $err->getMessage();
 }
 
+if (isset($_REQUEST['date'])) {
+    $date=$_REQUEST['date'];
+    $datee=$_REQUEST['datee'];
+    $price=$_REQUEST['price'];
+    $phone=$_REQUEST['phone'];
+    $name=$_REQUEST['name'];
 
-$read=$db->prepare("SELECT * FROM users");
-$read->execute();
-$info=$read->fetchAll(PDO::FETCH_ASSOC);
-print_r(json_encode($info));
-
-// $sql = "select * from users";
-// $result = mysqli_query($con, $sql);
-
-// if(!$result){
-//     http_response_code();
-//     die(mysqli_error($con));
-// }
-
-
-
-
-
-// for($i=0;$i<mysqli_num_rows($result);$i++){
-// echo($i>0?',':'').json_encode(mysqli_fetch_assoc($result));
-// }
-
+    $st=$db->prepare("INSERT INTO reservation (from_date,to_date,price,phone,user_name) VALUES('$date','$datee','$price','$phone','$name')");
+    $st->execute();
+}
+else{
+    $read=$db->prepare("SELECT * FROM reservation");
+    $read->execute();
+    $info=$read->fetchAll(PDO::FETCH_ASSOC);
+    print_r(json_encode($info));
+}
 ?>
