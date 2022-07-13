@@ -4,7 +4,7 @@ function Features(){
     return(
         <>
          {/* Start other-issue Area */}
-  <section className="other-issue-area section-gap">
+  <section className="other-issue-area section-gap" id='Features'>
     <div className="container">
       <div className="row d-flex justify-content-center">
         <div className="menu-content pb-70 col-lg-9">

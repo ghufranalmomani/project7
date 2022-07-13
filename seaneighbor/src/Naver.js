@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Signup from './Signup/Signup';
-
 import Button from 'react-bootstrap/Button';
 
 
@@ -21,10 +20,10 @@ function Naver(props){
   if( id != 0)
   {
     state = true;
-  }else {
+   }else if( id == null || id == 0) {
 
     state = false;
-  }
+  } 
 
       const [login,set_logged] = useState(state);
 
@@ -108,7 +107,7 @@ function Naver(props){
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Signup</Nav.Link>
-     <Nav.Link href="/services" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
+     <Nav.Link href="/" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
 
         </Navbar.Collapse>
       </Container>

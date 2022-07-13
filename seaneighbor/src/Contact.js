@@ -109,7 +109,7 @@ function Contact(){
                 />
               </div>
               <div className="col-lg-12">
-              
+              {/* <RatingStars /> */}
                 <div className="alert-msg" style={{ textAlign: "left" }} />
                 <button
                   className="genric-btn primary"

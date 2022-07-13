@@ -209,7 +209,7 @@ function About(){
           <div className="row d-flex justify-content-center">
             <div className="menu-content pb-70 col-lg-8">
               <div className="title text-center">
-                <h1 className="mb-10"> From Our Clients</h1>
+                <h1 className="mb-10">Testimonial from our Clients</h1>
               </div>
             </div>
           </div>
