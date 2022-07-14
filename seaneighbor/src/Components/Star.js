@@ -6,7 +6,6 @@ const Star = ({ changeGradeIndex ,index,key,style }) => {
         changeGradeIndex(e.target.value);
         console.log(index);
     }
-
     return (
         <label className="star">
             <input

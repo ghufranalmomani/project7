@@ -8,72 +8,36 @@ import Naver from './Naver';
 function Login(){
 
     const [APIData, setAPIData] = useState([]);
+    const [pass, setPass] = useState('');
+    const [email, setEmail] = useState('');
+    const [id, setId] = useState('');
+
     useEffect(() => {
-      axios.get(`http://localhost/project7/seaneighbor/php/readuser.php`)
-          .then((response) => {
-              setAPIData(response.data);
-              // console.log(response.data,"res.data")
-          })
-  }, [])
+        setPass(pass);
+        setEmail(email);
+        axios.get(`http://localhost/project7/seaneighbor/php/readuser.php?email=`+email+'&pass='+pass)
+        .then((response) => {
+            setAPIData(response.data);
+            console.log(response.data,"res.data")
+        })
+    }, [email,pass])
 
-  const [pass, setpass] = useState('');
-  const [email, setEmail] = useState('');
-  const [id, setId] = useState('');
-
-  const passHandel = (e)=>{setpass(e.target.value)}
-  const emailHandel = (e)=>{setEmail(e.target.value)}
-   
-
-  const handelLog=(event)=>{
-    event.preventDefault();
-
-    // const newe =()=>{
-
-      
-    // }
-
-    // console.log(pass,email);
-    // APIData.map(user => console.log(user.email))
-    APIData.map((el)=>{
-        document.getElementById('e1').style.display="none";
-               document.getElementById('e2').style.display="none";
-   
-  
-//    console.log(e, el.email);
-//    console.log('"'+p+'"');
-        if(pass == el.pass && email == el.email){
-
-            // console.log(el.id , 'roa');
-            // setId(el.id)
-            // console.log(el.id, 'bahaa');
-            
-            sessionStorage.setItem("user_id", el.id);
+    const handelLog=(event)=>{
+        event.preventDefault();
+        if(APIData.length !== 0)
+        {
+            sessionStorage.setItem("user_id",APIData[0]['id']);
             let ide= sessionStorage.getItem("user_id"); //// raghad here where i store data
             console.log("heh"+ide);
-            // console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"', 'yas');
-            // let id_user= el.id;
-          
-            // localStorage.setItem('user', JSON.stringify(id_user)) 
+            window.location.href = "/";
 
-
-            // setUserId(el.id)
-            // setLogin(true)
-            // console.log(id_user);
-
-            window.location.href = {"/":+el.id};
-            
-
-           
-           }else{
-            //    console.log('"'+pass+'"', '"'+el.pass+'"','"'+email+'"', '"'+el.email+'"',  'no');
-               document.getElementById('e1').style.display="block";
-               document.getElementById('e2').style.display="block";
-            }
-         })
-   
+        }
+        else
+        {
+            document.getElementById('e1').style.display="block";
+            document.getElementById('e2').style.display="block";
+        }
   }
-
-//   console.log(id,"before render" );
 
     return(
         
@@ -85,15 +49,13 @@ function Login(){
             <form id='regForm' className="d"  noValidate>
               <h2 className="text-center">Login</h2>
                
-                
-
                 <div className="form-group">
                     <label>Email</label><br></br>
                     <input
                         type="email"
                        
                         name="email"
-                        onChange={ emailHandel}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="form-control"
                         required
                     />
@@ -107,7 +69,7 @@ function Login(){
                         type="password"
              
                         name="pass"
-                        onChange={passHandel}
+                        onChange={(e) => setPass(e.target.value)}
                         className="form-control"
                         required
                     />

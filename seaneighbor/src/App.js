@@ -4,14 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import Form from './Components/form';
 import {$,jQuery} from 'jquery';
-import Forme from './Components/form';
 import Services from './Components/sevices';
 import Naver from './Naver';
 import Footer from './Footer';
 import Home from './Home/Home';
 import About from './About';
 import Contact from './Contact';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import SimpleMap from './Components/map';
 import Signup from './Signup/Signup';
 import Reg from './Reg';
@@ -35,7 +34,7 @@ return(
     {/* <Form /> */}
     <BrowserRouter><Routes>
     <Route path={'/about'} element={<About />} >About us</Route>
-    <Route path={'/form'} element={<Forme />}>About us</Route>
+    <Route path={'/form'} element={<Form />}>About us</Route>
     <Route path={'/:id'} element={<Home />}>Landing Page</Route>
     <Route path={'/'} element={<Home />}>Landing Page</Route>
     <Route path={'/contact'} element={<Contact />}>Contact us</Route>

@@ -245,7 +245,7 @@ export default class UserForm extends Component {
                         className={isError.email.length > 0 ? "is-invalid form-control" : "form-control"}
                         name="email"
                         onChange={this.formValChange}
-                        required
+                        required="true"
                     />
                     {isError.email.length > 0 && (
                         <span className="invalid-feedback">{isError.email}</span>
