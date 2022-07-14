@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Signup from './Signup/Signup';
 import Button from 'react-bootstrap/Button';
+import {useParams} from 'react';
 
 
 
@@ -64,6 +65,9 @@ function Naver(props){
                   <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-twitter" />
                   </a>
+                  <a>
+                  <i className="fa-brands fa-linkedin"></i>
+                  </a>
                   {/* <a href="https://web.facebook.com/SoukJara2013"target="_blank">
                     <i className="fa fa-dribbble" />
                   </a>
@@ -89,7 +93,7 @@ function Naver(props){
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className="m-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
@@ -107,7 +111,8 @@ function Naver(props){
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Nav.Link>
           <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
     height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Signup</Nav.Link>
-     <Nav.Link href="/" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}>Logout</Nav.Link>
+     <Nav.Link href="/" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}><i className="fa-solid fa-right-from-bracket" />
+</Nav.Link>
 
         </Navbar.Collapse>
       </Container>

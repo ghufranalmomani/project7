@@ -16,7 +16,8 @@ try {
 }
 
 
-$read=$db->prepare("SELECT * FROM users");
+
+$read=$db->prepare("SELECT * FROM users ");
 $read->execute();
 $info=$read->fetchAll(PDO::FETCH_ASSOC);
 print_r(json_encode($info));
