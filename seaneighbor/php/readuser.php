@@ -15,12 +15,15 @@ try {
     echo "error accoured, erros message is :". $err->getMessage();
 }
 
+$email=$_REQUEST['email'];
+$pass=$_REQUEST['pass'];
 
-
-$read=$db->prepare("SELECT * FROM users ");
+$read=$db->prepare("SELECT * FROM users WHERE email='$email' AND pass='$pass'");
 $read->execute();
 $info=$read->fetchAll(PDO::FETCH_ASSOC);
 print_r(json_encode($info));
+
+
 
 // $sql = "select * from users";
 // $result = mysqli_query($con, $sql);
