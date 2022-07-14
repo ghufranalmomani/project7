@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 
 
 
@@ -47,32 +48,32 @@ function topFunction() {
               <div className="col">
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <a href="/" style={{color:'white'}}>Home</a>
                   </li>
                   <li>
-                    <a href="#Features">Feature</a>
+                    <a href="#Features" style={{color:'white'}}>Feature</a>
                   </li>
                   <li>
-                    <a href="/services">Services</a>
+                    <a href="/services" style={{color:'white'}}>Services</a>
                   </li>
                   <li>
-                    <a href="#event">event</a>
+                    <a href="#event" style={{color:'white'}}>event</a>
                   </li>
                 </ul>
               </div>
               <div className="col" >
                 <ul style={{padding:'0px'}}>
                   <li>
-                    <a href="/about">ABOUT</a>
+                    <a href="/about"style={{color:'white'}} >About</a>
                   </li>
                   <li>
-                    <a href="#Packages">Packages</a>
+                    <a href="#Packages" style={{color:'white'}}>Packages</a>
                   </li>
                   {/* <li>
                     <a href="/book">Book</a>
                   </li> */}
                   <li>
-                    <a href="/contact">Contact</a>
+                    <a href="/contact" style={{color:'white'}}>Contact</a>
                   </li>
                 </ul>
               </div>
@@ -82,7 +83,7 @@ function topFunction() {
         <div className="col-lg-3  col-md-6 col-sm-6">
           <div className="single-footer-widget">
             <h6>ABOUT US</h6>
-            <p>
+            <p style={{color:'white'}}>
             If you are looking space to grow your small business, you may be very confused about the place and price. We provide that at nominal prices..
             </p>
           </div>

@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-
+import { NavLink } from 'react-bootstrap';
 import Main from './main';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Signup from './Signup/Signup';
 import Button from 'react-bootstrap/Button';
+import './App.css'
+import { useLocation } from 'react-router';
 
 
 
@@ -46,36 +48,14 @@ function Naver(props){
 <div className="header-top">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 col-sm-6 col-6 header-top-left">
-                <ul>
-                  <li>
-                    <a href="/contact">Visit Us</a>
-                  </li>
-                  <li>
-                    <a href="/cal">Book Booth</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-6 col-sm-6 col-6 header-top-right">
-                <div className="header-social">
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-facebook" />
-                  </a>
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-twitter" />
-                  </a>
-                  {/* <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-dribbble" />
-                  </a>
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-behance" />
-                  </a> */}
-                </div>
-              </div>
+
+
+           
             </div>
           </div>
         </div>
         <div className="container main-menu ">
+          
 <Navbar  expand="lg">
       <Container fluid >
         <Navbar.Brand href="#"> <img
@@ -93,9 +73,9 @@ function Naver(props){
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/" className='text-white mr-3'>Home</Nav.Link>
-            <Nav.Link href="/cal" className='text-white mr-3'>Book Booth</Nav.Link>
-            <Nav.Link href="/services" className='text-white mr-3'>Services</Nav.Link>
+            <NavLink href="/" className='text-white mr-3 '>Home</NavLink>
+            <NavLink href="/cal" className='text-white mr-3'>Book Booth</NavLink>
+            <NavLink href="/services" className='text-white mr-3'>Services</NavLink>
            
             <Nav.Link href="/about" className='text-white mr-3'>
              About Us
