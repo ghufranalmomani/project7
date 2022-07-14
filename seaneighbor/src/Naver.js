@@ -12,17 +12,13 @@ import { NavLink,Link,useLocation  } from 'react-router-dom'
 
 
 function Naver(props){
-  const location = useLocation(); // once ready it returns the 'window.location' object
-  const [url, setUrl] = useState(null);
 
   let id =props.user_id;
-
   let message=sessionStorage.getItem('message');
   let smessage=sessionStorage.getItem('smessage');
-  
+
   useEffect(()=>{
-    setUrl(location.pathname);
-  },[message,smessage,location])
+  },[message,smessage])
 
   // let id = sessionStorage.getItem("user_id"); //// raghad here where i call data
   console.log(id , 'nav');
@@ -97,11 +93,11 @@ function Naver(props){
             style={{ maxHeight: '100px'}}
             navbarScroll
           >
-            <Link to="/" className={`text-white mr-3 ${"underline" + (url === "/" ?" active" : "")}`} activeStyle={{ color:'red' }}>Home</Link>
-            <Link to="/cal" className='text-white mr-3'>Book Booth</Link>
-            <Link to="/services" className='text-white mr-3'>Services</Link>
-            <Link to="/about" className='text-white mr-3'>About Us</Link>
-            <Link to="/contact" className='text-white'>Contact Us</Link>
+            <Nav.Link href="/" className={`text-white mr-3`}>Home</Nav.Link>
+            <Nav.Link href="/cal" className='text-white mr-3'>Book Booth</Nav.Link>
+            <Nav.Link href="/services" className='text-white mr-3'>Services</Nav.Link>
+            <Nav.Link href="/about" className='text-white mr-3'>About Us</Nav.Link>
+            <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>
           </Nav>
           <Nav.Link href="/login" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
 
