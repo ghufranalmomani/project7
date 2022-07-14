@@ -103,11 +103,14 @@ function Naver(props){
             <Link to="/about" className='text-white mr-3'>About Us</Link>
             <Link to="/contact" className='text-white'>Contact Us</Link>
           </Nav>
-          <Link to="/login" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
-    height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Link>
-          <Link to="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
-    height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Signup</Link>
-     <Link to="/" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}><i className="fa-solid fa-right-from-bracket" /></Link>
+          <Nav.Link href="/login" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
+
+    height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Login</Nav.Link>
+          <Nav.Link href="/Signup" className='text-white' style={{border: '2px solid #f8b600',width: '83px',
+    height: '45px',textAlign: 'center', display: state ? 'none': 'block'}}>Signup</Nav.Link>
+     <Nav.Link href="/" className='text-white mr-3' style={{display: state ? 'block': 'none'}} onClick={logout}><i className="fa-solid fa-right-from-bracket" />
+</Nav.Link>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

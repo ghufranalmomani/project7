@@ -100,7 +100,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter email address'"
                   className="common-input mb-20 form-control"
-                  required
+                  required="true"
                   type="email"
                   onChange={emailHandle}
                   
@@ -111,7 +111,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter subject'"
                   className="common-input mb-20 form-control"
-                  required
+                  required="true"
                   type="text"
                   onChange={subHandle}
                 />
@@ -123,6 +123,8 @@ function Contact(){
                   placeholder="Enter Messege"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter Messege'"
+              
+                  defaultValue={""}
                   required
                   onChange={mesaageHandle}
                 />
