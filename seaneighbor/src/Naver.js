@@ -43,38 +43,7 @@ function Naver(props){
     return(
         <>
 <header id="header" >
-<div className="header-top">
-          <div className="container">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-sm-6 col-6 header-top-left">
-                <ul>
-                  <li>
-                    <a href="/contact">Visit Us</a>
-                  </li>
-                  <li>
-                    <a href="/cal">Book Booth</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-6 col-sm-6 col-6 header-top-right">
-                <div className="header-social">
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-facebook" />
-                  </a>
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-twitter" />
-                  </a>
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-dribbble" />
-                  </a>
-                  <a href="https://web.facebook.com/SoukJara2013"target="_blank">
-                    <i className="fa fa-behance" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div className="container main-menu ">
 <Navbar  expand="lg">
       <Container fluid >

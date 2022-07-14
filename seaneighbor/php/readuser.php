@@ -17,8 +17,9 @@ try {
 
 
 $read=$db->prepare("SELECT * FROM users");
+// for($i=0;$i<mysqli_num_rows($result);$i++)
 $read->execute();
-$info=$read->fetchAll(PDO::FETCH_ASSOC);
+$info=$read->fetch(PDO::FETCH_ASSOC);
 print_r(json_encode($info));
 
 // $sql = "select * from users";
@@ -33,7 +34,7 @@ print_r(json_encode($info));
 
 
 
-// for($i=0;$i<mysqli_num_rows($result);$i++){
+
 // echo($i>0?',':'').json_encode(mysqli_fetch_assoc($result));
 // }
 

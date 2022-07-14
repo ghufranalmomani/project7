@@ -6,6 +6,12 @@ import RatingStars from './Components/RatingStars'
 
 function Contact(){
 
+
+  const mesHandle=(e)=>{
+    e.preventDefault();
+    alert('Thank you , we will contact you soon');
+    window.location= '/contact';
+  }
     return(
 
 <>
@@ -63,7 +69,7 @@ function Contact(){
           <form
             className="form-area contact-form text-right"
             id="myForm"
-            action="mail.php"
+            action=""
             method="post"
           >
             <div className="row">
@@ -74,7 +80,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter your name'"
                   className="common-input mb-20 form-control"
-                  required=""
+                  required
                   type="text"
                 />
                 <input
@@ -84,8 +90,9 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter email address'"
                   className="common-input mb-20 form-control"
-                  required=""
+                  required
                   type="email"
+                  
                 />
                 <input
                   name="subject"
@@ -93,7 +100,7 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter subject'"
                   className="common-input mb-20 form-control"
-                  required=""
+                  required
                   type="text"
                 />
               </div>
@@ -104,7 +111,7 @@ function Contact(){
                   placeholder="Enter Messege"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter Messege'"
-                  required=""
+                  required
                   defaultValue={""}
                 />
               </div>
@@ -114,6 +121,7 @@ function Contact(){
                 <button
                   className="genric-btn primary"
                   style={{ float: "right" }}
+                  onClick={mesHandle}
                 >
                   Send Message
                 </button>
@@ -146,4 +154,3 @@ function Contact(){
         )
     }
     export default Contact;    
-

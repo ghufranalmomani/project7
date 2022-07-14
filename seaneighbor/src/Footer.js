@@ -50,30 +50,22 @@ function topFunction() {
                     <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="#Features">Feature</a>
+                    <a href="/cal">Book Booth</a>
                   </li>
                   <li>
                     <a href="/services">Services</a>
                   </li>
                   <li>
-                    <a href="#event">event</a>
+                    <a href="/Contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="/About">About Us</a>
                   </li>
                 </ul>
               </div>
               <div className="col" >
                 <ul style={{padding:'0px'}}>
-                  <li>
-                    <a href="/about">ABOUT</a>
-                  </li>
-                  <li>
-                    <a href="#Packages">Packages</a>
-                  </li>
-                  {/* <li>
-                    <a href="/book">Book</a>
-                  </li> */}
-                  <li>
-                    <a href="/contact">Contact</a>
-                  </li>
+                  
                 </ul>
               </div>
             </div>
@@ -123,9 +115,9 @@ function topFunction() {
         <p className="col-lg-8 col-sm-12 footer-text m-0">
           {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
           Copyright © All rights reserved | This template is made with{" "}
-          <i className="fa fa-heart-o" aria-hidden="true" /> by{" "}
+          <i className="fa fa-heart-o" aria-hidden="true" /> by Group 4{" "}
           <a href="https://colorlib.com" target="_blank">
-            Colorlib
+            
           </a>
           {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
         </p>

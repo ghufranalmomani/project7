@@ -21,7 +21,7 @@ function Event(){
               <div className="event-meta">
                 <p>
                   <i className="fa fa-calendar-alt" />
-                  01-Jan-45
+                  01-Aug-22
                 </p>
                 <p>
                   <i className="far fa-clock" />
@@ -29,14 +29,13 @@ function Event(){
                 </p>
                 <p>
                   <i className="fa fa-map-marker-alt" />
-                  New York
+                  Aqaba
                 </p>
               </div>
               <div className="event-text">
                 <h3>Eid al-Adha Celebration</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
-                  facili ornare velit non vulpte liqum metus tortor
+                Some home entrepreneurs and craftsmen working in poverty alleviation programs run by NGOs gather in the open air to display their various products to visitors and tourists.
                 </p>
                 {/* <a className=" primary-btn text-uppercase mt-5" href="">
                   Join Now
@@ -54,7 +53,7 @@ function Event(){
               <div className="event-meta">
                 <p>
                   <i className="fa fa-calendar-alt" />
-                  01-Jan-45
+                  01-Aug-2022
                 </p>
                 <p>
                   <i className="far fa-clock" />
@@ -62,14 +61,13 @@ function Event(){
                 </p>
                 <p>
                   <i className="fa fa-map-marker-alt" />
-                  New York
+                  Aqaba
                 </p>
               </div>
               <div className="event-text">
                 <h3>Food from all over the world</h3>
                 <p>
-                  Lorem ipsum dolor sit amet elit. Neca pretim miura bitur
-                  facili ornare velit non vulpte liqum metus tortor
+                Some home entrepreneurs and craftsmen working in poverty alleviation programs run by NGOs gather in the open air to display their various products to visitors and tourists.
                 </p>
                 {/* <a className="primary-btn text-uppercase mt-5" href="">
                   Join Now
