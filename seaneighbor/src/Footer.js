@@ -51,30 +51,19 @@ function topFunction() {
                     <a href="/" style={{color:'white'}}>Home</a>
                   </li>
                   <li>
-                    <a href="#Features" style={{color:'white'}}>Feature</a>
+
                   </li>
                   <li>
                     <a href="/services" style={{color:'white'}}>Services</a>
                   </li>
                   <li>
-                    <a href="#event" style={{color:'white'}}>event</a>
+
                   </li>
                 </ul>
               </div>
               <div className="col" >
                 <ul style={{padding:'0px'}}>
-                  <li>
-                    <a href="/about"style={{color:'white'}} >About</a>
-                  </li>
-                  <li>
-                    <a href="#Packages" style={{color:'white'}}>Packages</a>
-                  </li>
-                  {/* <li>
-                    <a href="/book">Book</a>
-                  </li> */}
-                  <li>
-                    <a href="/contact" style={{color:'white'}}>Contact</a>
-                  </li>
+
                 </ul>
               </div>
             </div>
