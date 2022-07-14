@@ -34,14 +34,14 @@ function Services() {
     if (ide == 0) 
     {
       event.preventDefault();
-      alert('you need to log in to send a comment');
+      sessionStorage.setItem('message','you need to log in to submit a comment');
       window.location= 'http://localhost:3000/login';
     }
     else
     {
     event.preventDefault();
     axios.post('http://localhost/project7/seaneighbor/php/comments.php?name='+name+'&email='+email+'&message='+message+'&rate='+rate);
-    alert('Your comment submitted succefully');
+    sessionStorage.setItem("smessage",'Your comment submitted succefully');
     window.location= 'http://localhost:3000/services';
     }
   }
@@ -191,13 +191,14 @@ function Services() {
                 />
               </div>
               <div className="col-lg-12" style={{ justifyItems: 'center', display: 'grid' }}>
-              
+                <div><p style={{display:name === '' || email === '' || message === '' ||rate === null? 'block' : 'none', color:'red'}}>* All feilds Are required</p></div>
                 <div className="alert-msg" style={{ textAlign: "left" }} />
                 <button
                 type='submit'
-                  className="genric-btn primary"
+                  className={` primary ${name === '' || email === '' || message === '' || rate === null ? 'btn bg-light': 'genric-btn'}`}
                   style={{ float: "right" }}
                   onClick={submitHandler}
+                  disabled={name === '' || email === '' || message === '' || rate === null}
                 >
                   Submit Comment
                 </button>
