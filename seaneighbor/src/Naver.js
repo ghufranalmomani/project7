@@ -1,18 +1,10 @@
-
-import React, {useState} from 'react';
-
 import React, {useEffect, useState} from 'react';
-
-
 import Main from './main';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Signup from './Signup/Signup';
 import Button from 'react-bootstrap/Button';
-
-
-
 import Messege from './Components/message';
 import { NavLink,Link,useLocation  } from 'react-router-dom'
 
