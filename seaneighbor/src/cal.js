@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import Comment from './Components/comment'
 
 function Cal(){
 
@@ -272,6 +272,7 @@ info.map(info => {
 // console.log(info);
 // console.log(typeof(info));
 return(
+  <>
     <div className="wrapper  ">
   <div className="inner row container d-flex flex-wrap  " >
     <div className='col-lg-1 '></div>
@@ -345,40 +346,10 @@ return(
     <label htmlFor="">Any note you want to tell us</label>
     </div>
     <br></br><textarea style={{height: '100px'}}  className="form-control " rows="4"></textarea>
-    
-      {/* <div className="form-wrapper">
-        <label htmlFor="">Adults *</label>
-        <select name="" id="" className="form-control">
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-          <option value={4}>4</option>
-          <option value={5}>5</option>
-          <option value={6}>6</option>
-        </select>
-        <i className="zmdi zmdi-chevron-down" />
-      </div>
-      <div className="form-wrapper">
-        <label htmlFor="">Chidren *</label>
-        <select name="" id="" className="form-control">
-          <option value={1}>1</option>
-          <option value={2}>2</option>
-          <option value={3}>3</option>
-          <option value={4}>4</option>
-          <option value={5}>5</option>
-          <option value={6}>6</option>
-        </select>
-        <i className="zmdi zmdi-chevron-down" />
-      </div> */}
     </div>
     <div className="checkbox">
       <p style={{margin:'0'}}>Total Price:</p>
       <p>{price}</p>
-      {/* <label>
-        <input type="checkbox" /> No one rejects, dislikes, or avoids pleasure
-        itself.
-        <span className="checkmark" />
-      </label> */}
     </div>
     <div className="checkbox">
       <p style={{display:data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''? 'block' : 'none', color:'red'}}>* All feilds are required</p>
@@ -503,7 +474,8 @@ return(
 
   </div>
   </div>
-
+  <Comment />
+  </>
 )
 }
 
