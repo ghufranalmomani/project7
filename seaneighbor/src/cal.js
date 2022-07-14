@@ -163,10 +163,7 @@ break;
   /////////////////////
   let ide= sessionStorage.getItem("user_id");
 
-  if (ide == 0) {
-    window.location= 'http://localhost:3000/login';
-    alert('you need to log in to see this page');
-  }
+
   const [info, setinfo] = useState([]);
   const [data1, setdata1] = useState('');
   const [date2, setdate2] = useState('');
@@ -227,10 +224,19 @@ else if (diffDays > 30)
 }
 
 console.log(price);
-const handleForm=()=>{
+const handleForm=(e)=>{
+  e.preventDefault();
+  if (ide == 0) 
+  {
+    sessionStorage.setItem('message', 'you need to login to book a booth')
+    window.location= '/login';
+  }
+  else
+  {
   axios.post('http://localhost/project7/seaneighbor/php/form.php?date='+data1+'&datee='+date2+'&price='+price+'&phone='+phone+'&name='+name);
-  alert("booked succefully");
+  sessionStorage.setItem("smessage","booked succefully");
   window.location= '/cal';
+  }
 }
 
   // console.log(diffDays, 'date');
@@ -375,9 +381,15 @@ return(
       </label> */}
     </div>
     <div className="checkbox">
-      <p style={{display:display? 'block' : 'none', color:'red'}}>not available</p>
+      <p style={{display:data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''? 'block' : 'none', color:'red'}}>* All feilds are required</p>
     </div>
-    <button data-text="Book Booth" type='submit' onClick={handleForm} className={display? 'bg-light' : 'bg-primay'}>
+    <button 
+    data-text="Book Booth" 
+    type='submit' 
+    onClick={handleForm} 
+    className={`${data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''? 'btn bg-light' : 'generic-btn '}`}
+    disabled={data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''}
+    >
       <span>Book</span>
     </button>
   </form>
