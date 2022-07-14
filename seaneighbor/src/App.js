@@ -10,7 +10,7 @@ import Footer from './Footer';
 import Home from './Home/Home';
 import About from './About';
 import Contact from './Contact';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import SimpleMap from './Components/map';
 import Signup from './Signup/Signup';
 import Reg from './Reg';

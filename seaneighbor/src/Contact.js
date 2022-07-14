@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 import SimpleMap from './Components/map';
 import RatingStars from './Components/RatingStars'
@@ -6,10 +6,19 @@ import RatingStars from './Components/RatingStars'
 
 function Contact(){
 
+  const [name,setName]=useState('');
+  const [email,setEmail]=useState('');
+  const [subject,setSubject]=useState('');
+  const [message,setMessage]=useState('');
+
+  const nameHandle=(e)=>{setName(e.target.value)};
+  const emailHandle=(e)=>{setEmail(e.target.value)};
+  const subHandle=(e)=>{setSubject(e.target.value)};
+  const mesaageHandle=(e)=>{setMessage(e.target.value)};
 
   const mesHandle=(e)=>{
     e.preventDefault();
-    alert('Thank you , we will contact you soon');
+    sessionStorage.setItem('smessage', 'Thank You, We will contact you soon');
     window.location= '/contact';
   }
     return(
@@ -82,6 +91,7 @@ function Contact(){
                   className="common-input mb-20 form-control"
                   required="true"
                   type="text"
+                  onChange={nameHandle}
                 />
                 <input
                   name="email"
@@ -90,8 +100,9 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter email address'"
                   className="common-input mb-20 form-control"
-                  required
+                  required="true"
                   type="email"
+                  onChange={emailHandle}
                   
                 />
                 <input
@@ -100,8 +111,9 @@ function Contact(){
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter subject'"
                   className="common-input mb-20 form-control"
-                  required
+                  required="true"
                   type="text"
+                  onChange={subHandle}
                 />
               </div>
               <div className="col-lg-6 form-group">
@@ -111,17 +123,21 @@ function Contact(){
                   placeholder="Enter Messege"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = 'Enter Messege'"
-                  required
+              
                   defaultValue={""}
+                  required
+                  onChange={mesaageHandle}
                 />
               </div>
               <div className="col-lg-12">
               {/* <RatingStars /> */}
                 <div className="alert-msg" style={{ textAlign: "left" }} />
+                <div><p style={{display:name === '' || email === '' || subject === '' ||message === ''? 'block' : 'none', color:'red'}}>* All feilds Are required</p></div>
                 <button
-                  className="genric-btn primary"
+                  className={` primary ${name==='' || email==='' || subject==='' || message===''? 'btn bg-light' :'genric-btn'}`}
                   style={{ float: "right" }}
                   onClick={mesHandle}
+                  disabled={name==='' || email==='' || subject==='' || message===''}
                 >
                   Send Message
                 </button>
