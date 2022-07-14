@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 
 
 
@@ -47,25 +48,22 @@ function topFunction() {
               <div className="col">
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <a href="/" style={{color:'white'}}>Home</a>
                   </li>
                   <li>
-                    <a href="/cal">Book Booth</a>
+
                   </li>
                   <li>
-                    <a href="/services">Services</a>
+                    <a href="/services" style={{color:'white'}}>Services</a>
                   </li>
                   <li>
-                    <a href="/Contact">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="/About">About Us</a>
+
                   </li>
                 </ul>
               </div>
               <div className="col" >
                 <ul style={{padding:'0px'}}>
-                  
+
                 </ul>
               </div>
             </div>
@@ -74,7 +72,7 @@ function topFunction() {
         <div className="col-lg-3  col-md-6 col-sm-6">
           <div className="single-footer-widget">
             <h6>ABOUT US</h6>
-            <p>
+            <p style={{color:'white'}}>
             If you are looking space to grow your small business, you may be very confused about the place and price. We provide that at nominal prices..
             </p>
           </div>
