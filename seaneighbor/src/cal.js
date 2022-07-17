@@ -5,11 +5,10 @@ import Comment from './Components/comment'
 function Cal(){
 
 
-
-  /////////////////
-  let queryUrl = "https://api.openweathermap.org/data/2.5/onecall?";
-let lat = "lat=29.5320522&";
-let lon = "lon=35.0063209&";
+// API call
+let queryUrl = "https://api.openweatherrmap.org/data/2.5/weather?q=${search}&appid=32e7a9d44328b888755530d35b7c40b6f";
+let lat = "lat=52.229676&";
+let lon = "lon=21.012229&";
 let apiOptions = "units=metric&exclude=minutely,alerts&";
 let apiKey = "appid=dbb76c5d98d5dbafcb94441c6a10236e";
 let file = queryUrl + lat + lon + apiOptions + apiKey;
@@ -23,7 +22,7 @@ let description = data.current.weather[0].description;
 let temp = Math.round(data.current.temp);
 let pressure = data.current.pressure;
 let humidity = data.current.humidity;
-let name = "Aqaba";
+let name = "Warsaw";
 
 document.getElementById("wrapper-description").innerHTML = description;
 document.getElementById("wrapper-temp").innerHTML = temp + "°C";
@@ -277,93 +276,7 @@ return(
   <div className="inner row container d-flex flex-wrap  " >
     <div className='col-lg-1 '></div>
     <div className='col-lg-6 '>
-  <form action="" >
-    <h3>Find a Booth</h3>
-    <div className="form-row flex-nowrap">
-      <div className="form-wrapper">
-        <label htmlFor="">Name *</label>
-        <input type="text" className="form-control" placeholder="Your Name" onChange={nameehandle}/>
-      </div>
-      <div className="form-wrapper">
-        <label htmlFor="">Phone *</label>
-        <input type="text" className="form-control" placeholder="Phone" onChange={phonehandle}/>
-      </div>
-    </div>
-    <div className="form-row flex-nowrap">
-      <div className="form-wrapper">
-        <label htmlFor="">Date From*</label>
-        
-        <input
-          type="date"
-          className="form-control "
-          data-language="en"
-          data-date-format="dd M yyyy"
-          id="dp1"
-          onChange={data1Handel}
-        />
-      </div>
-      <div className="form-wrapper">
-        <label htmlFor="">Date To *</label>
-        
-        <input
-          type="date"
-          className="form-control "
-          data-language="en"
-          data-date-format="dd M yyyy"
-          id="dp2"
-          onChange={date2Handel}
-        />
-      </div>
-    </div>
-    <div className="form-row flex-nowrap">
-      <div className="form-wrapper">
-        <label htmlFor="">place</label>
-        <select name="place" className="form-control form-select bg-white rounded form-control-md" id="place" onChange={placeHandel}>
-             <option>...</option>
-              <option value="start">Start</option>
-              <option value="middle">Middle</option>
-              <option value="last">Last</option>
-          </select>
-      </div>
-      <div className="form-wrapper">
-        <label htmlFor="">Booth</label>
-        <select name="booth" className="form-control form-select bg-white rounded form-control-md" id="booth" onChange={boothHandel} value={booth}>
-              <option style={{display: place == 'start' || place == 'middle' || place == 'last' ? 'none' :'block'}}>...</option>
-              <option value="S-1" style={{display: place == 'start' ? 'block' :'none'}}>S-1</option>
-              <option value="S-2" style={{display: place == 'start' ? 'block' :'none'}}>S-2</option>
-              <option value="S-3" style={{display: place == 'start' ? 'block' :'none'}}>S-3</option>
-              <option value="M-1" style={{display: place == 'middle' ? 'block' :'none'}}>M-1</option>
-              <option value="M-2" style={{display: place == 'middle' ? 'block' :'none'}}>M-2</option>
-              <option value="M-3" style={{display: place == 'middle' ? 'block' :'none'}}>M-3</option>
-              <option value="L-1" style={{display: place == 'last' ? 'block' :'none'}}>L-1</option>
-              <option value="L-2" style={{display: place == 'last' ? 'block' :'none'}}>L-2</option>
-              <option value="L-3" style={{display: place == 'last' ? 'block' :'none'}}>L-3</option>
-          </select>
-      </div>
-    </div>
-    <div className="form-row last ">
-    <div className='row'>
-    <label htmlFor="">Any note you want to tell us</label>
-    </div>
-    <br></br><textarea style={{height: '100px'}}  className="form-control " rows="4"></textarea>
-    </div>
-    <div className="checkbox">
-      <p style={{margin:'0'}}>Total Price:</p>
-      <p>{price}</p>
-    </div>
-    <div className="checkbox">
-      <p style={{display:data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''? 'block' : 'none', color:'red'}}>* All feilds are required</p>
-    </div>
-    <button 
-    data-text="Book Booth" 
-    type='submit' 
-    onClick={handleForm} 
-    className={`${data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''? 'btn bg-light' : 'generic-btn '}`}
-    disabled={data1 === '' || date2 === '' || name === '' ||phone === '' ||place === '' || booth === ''}
-    >
-      <span>Book</span>
-    </button>
-  </form>
+ 
 
   </div>
 {/* /////////////////////////////////////////////////// */}
@@ -474,7 +387,7 @@ return(
 
   </div>
   </div>
-  <Comment />
+ 
   </>
 )
 }

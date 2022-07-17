@@ -45,7 +45,7 @@ a {
 .wrapper {
   min-height: 120vh;
   position: relative;
-  background: url("../img/4.jpg") no-repeat right center;
+  background: url("https://www.almanac.com/sites/default/files/image_nodes/rainbow-weather.jpg") no-repeat right center;
   background-size: cover; }
 
 .inner {

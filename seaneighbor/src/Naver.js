@@ -60,13 +60,7 @@ function Naver(props){
 <Navbar  expand="lg">
       <Container fluid >
         <Navbar.Brand to="/"> 
-          <img
-            alt=""
-            src="/img/logo3.png"
-            width="170"
-            height="53"
-            className="d-inline-block align-top"
-          />
+         
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -76,12 +70,12 @@ function Naver(props){
             navbarScroll
           >
 
-            <Nav.Link href="/" className={`text-white mr-3`}>Home</Nav.Link>
-            <Nav.Link href="/cal" className='text-white mr-3'>Book Booth</Nav.Link>
-            <Nav.Link href="/services" className='text-white mr-3'>Services</Nav.Link>
-            <Nav.Link href="/about" className='text-white mr-3'>About Us</Nav.Link>
+            {/* <Nav.Link href="/" className={`text-white mr-3`}>Home</Nav.Link> */}
+            <Nav.Link href="/cal" className='text-white mr-3'>Weather</Nav.Link>
+            {/* <Nav.Link href="/services" className='text-white mr-3'>Services</Nav.Link>
+            <Nav.Link href="/about" className='text-white mr-3'>About Us</Nav.Link> */}
 
-            <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link>
+            {/* <Nav.Link href="/contact" className='text-white'>Contact Us</Nav.Link> */}
           </Nav>
           <Nav.Link href="/login" className='text-white ' style={{background: '#f8b600',marginRight: '20px',width: '83px',
 
